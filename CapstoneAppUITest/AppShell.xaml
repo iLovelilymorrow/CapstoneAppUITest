@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<Shell
+    x:Class="CapstoneAppUITest.AppShell"
+    xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:views="clr-namespace:CapstoneAppUITest.Views"
+    xmlns:local="clr-namespace:CapstoneAppUITest"
+    
+    Shell.FlyoutBehavior="Locked"
+    FlyoutWidth="300"
+    FlyoutBackgroundColor="Black">
+
+    <Shell.FlyoutContent>
+        <VerticalStackLayout>
+
+            <VerticalStackLayout>
+
+                <Frame x:Name="homePageButton" BackgroundColor="#171717" BorderColor="Black" VerticalOptions="Center" HorizontalOptions="Start" HeightRequest="50" WidthRequest="260"  Padding="0" Margin="20,20,0,0">
+                    <HorizontalStackLayout>
+                        <Label x:Name="homePageOpened" BackgroundColor="White" WidthRequest="4" HeightRequest="18" Margin="20,0,0,0" IsVisible="True"/>
+                        <Image Source="homewhite24.png" HeightRequest="24" WidthRequest="24" Margin="10,0,10,0"/>
+                        <Label Text="HOME" FontFamily="Bebas-Regular" FontSize="23" VerticalOptions="Center" TextColor="White"/>
+                    </HorizontalStackLayout>
+
+                    <Frame.GestureRecognizers>
+                        <TapGestureRecognizer NumberOfTapsRequired="1" Tapped="homePageButtonTapped"/>
+                    </Frame.GestureRecognizers>
+                </Frame>
+
+                <Frame x:Name="memberListPageButton" BackgroundColor="Black" BorderColor="Black" VerticalOptions="Center" HorizontalOptions="Start" HeightRequest="50" WidthRequest="260"  Padding="0" Margin="20,15,0,0">
+                    <HorizontalStackLayout>
+                        <Label x:Name="memberListPageOpened" BackgroundColor="White" WidthRequest="4" HeightRequest="18" Margin="20,0,0,0" IsVisible="False"/>
+                        <Image Source="memberwhite24.png" HeightRequest="24" WidthRequest="24" Margin="10,0,10,0"/>
+                        <Label Text="MEMBER LIST" FontFamily="Bebas-Regular" FontSize="23" VerticalOptions="Center" TextColor="White"/>
+                    </HorizontalStackLayout>
+
+                    <Frame.GestureRecognizers>
+                        <TapGestureRecognizer NumberOfTapsRequired="1" Tapped="memberListPageButtonTapped"/>
+                    </Frame.GestureRecognizers>
+                </Frame>
+
+                <Frame x:Name="promoPageButton" BackgroundColor="Black" BorderColor="Black" VerticalOptions="Center" HorizontalOptions="Start" HeightRequest="50" WidthRequest="260"  Padding="0" Margin="20,15,0,0">
+                    <HorizontalStackLayout>
+                        <Label x:Name="promoPageOpened" BackgroundColor="White" WidthRequest="4" HeightRequest="18" Margin="20,0,0,0" IsVisible="False"/>
+                        <Image Source="promowhite64.png" HeightRequest="24" WidthRequest="24" Margin="10,0,10,0"/>
+                        <Label Text="PROMOS" FontFamily="Bebas-Regular" FontSize="23" VerticalOptions="Center" TextColor="White"/>
+                    </HorizontalStackLayout>
+
+                    <Frame.GestureRecognizers>
+                        <TapGestureRecognizer NumberOfTapsRequired="1" Tapped="promoPageButtonTapped"/>
+                    </Frame.GestureRecognizers>
+                </Frame>
+
+                <Frame x:Name="notificationPageButton" BackgroundColor="Black" BorderColor="Black" VerticalOptions="Center" HorizontalOptions="Start" HeightRequest="50" WidthRequest="260"  Padding="0" Margin="20,15,0,0">
+                    <HorizontalStackLayout>
+                        <Label x:Name="notificationPageOpened" BackgroundColor="White" WidthRequest="4" HeightRequest="18" Margin="20,0,0,0" IsVisible="False"/>
+                        <Image Source="notificationwhite24.png" HeightRequest="24" WidthRequest="24" Margin="10,0,10,0"/>
+                        <Label Text="NOTIFICATIONS" FontFamily="Bebas-Regular" FontSize="23" VerticalOptions="Center" TextColor="White"/>
+                    </HorizontalStackLayout>
+
+                    <Frame.GestureRecognizers>
+                        <TapGestureRecognizer NumberOfTapsRequired="1" Tapped="notificationPageButtonTapped"/>
+                    </Frame.GestureRecognizers>
+                </Frame>
+
+                <Frame x:Name="adminControlPageButton" BackgroundColor="Black" BorderColor="Black" VerticalOptions="Center" HorizontalOptions="Start" HeightRequest="50" WidthRequest="260"  Padding="0" Margin="20,15,0,0">
+                    <HorizontalStackLayout>
+                        <Label x:Name="adminControlPageOpened" BackgroundColor="White" WidthRequest="4" HeightRequest="18" Margin="20,0,0,0" IsVisible="False"/>
+                        <Image Source="adminwhite24.png" HeightRequest="24" WidthRequest="24" Margin="10,0,10,0"/>
+                        <Label Text="ADMIN CONTROLS" FontFamily="Bebas-Regular" FontSize="23" VerticalOptions="Center" TextColor="White"/>
+                    </HorizontalStackLayout>
+
+                    <Frame.GestureRecognizers>
+                        <TapGestureRecognizer NumberOfTapsRequired="1" Tapped="adminControlPageButtonTapped"/>
+                    </Frame.GestureRecognizers>
+                </Frame>
+
+                <Button Pressed="Button_Pressed"/>
+
+            </VerticalStackLayout>
+            
+        </VerticalStackLayout>
+    </Shell.FlyoutContent>
+
+    <Shell.FlyoutFooter>
+        <VerticalStackLayout Padding="10">
+
+            <Label Text="HELLO, + {Binding Username}" FontSize="20" HorizontalOptions="Center" TextColor="White" Margin="0,0,0,10" FontFamily="Bebas-Regular"/>
+            
+            <Image WidthRequest="220" HeightRequest="220" Background="Wheat"/>
+
+            <Label Text="Version 1.0" FontSize="10" HorizontalOptions="Center" TextColor="White" Margin="0,20,0,0"/>
+            <Button Text="LOGOUT" FontFamily="Bebas-Neue" FontAttributes="Bold" BackgroundColor="#ff3131" TextColor="White" WidthRequest="175"/>
+            
+        </VerticalStackLayout>
+    </Shell.FlyoutFooter>
+
+    <ShellContent Route="Test" ContentTemplate="{DataTemplate views:TestingView}"/>
+    <ShellContent Route="Page1" ContentTemplate="{DataTemplate views:PageView1}"/>
+    <ShellContent Route="Page2" ContentTemplate="{DataTemplate views:PageView2}"/>
+    <ShellContent Route="Page3" ContentTemplate="{DataTemplate views:PageView3}"/>
+    <ShellContent Route="Page4" ContentTemplate="{DataTemplate views:PageView4}"/>
+    <ShellContent Route="Page5" ContentTemplate="{DataTemplate views:PageView5}"/>
+
+</Shell>

@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="CapstoneAppUITest.Views.PageView4"
+             BackgroundColor="#747474"
+             xmlns:styles="clr-namespace:CapstoneAppUITest.Resources.Styles">
+
+    <VerticalStackLayout>
+
+        <HorizontalStackLayout>
+        
+        <VerticalStackLayout Margin="30,0,0,0">
+
+            <Label Text="ADMIN CONTROLS" TextColor="Black" FontSize="45" FontFamily="Bebas-Regular" HorizontalOptions="Start" Margin="0,30,0,10"/>
+
+            <Frame Padding="3" BackgroundColor="Black" BorderColor="Black" CornerRadius="15" WidthRequest="460" HeightRequest="235" HorizontalOptions="Start">
+
+                <Frame BackgroundColor="#545454" BorderColor="#545454" CornerRadius="10" Padding="0">
+
+                    <VerticalStackLayout>
+
+                        <Label Text="CREATE NEW ADMIN ACCOUNT" TextColor="Black" FontSize="20" FontFamily="Bebas-Regular" HorizontalOptions="Start" Margin="20,15,0,0"/>
+
+                        <HorizontalStackLayout>
+                            <Label Text="USERNAME" TextColor="Black" FontSize="20" FontFamily="Bebas-Regular" HorizontalOptions="Start" Margin="20,20,0,0"/>
+
+                            <Frame Padding="2" BackgroundColor="Black" BorderColor="Black" CornerRadius="40" WidthRequest="275" HeightRequest="35" HorizontalOptions="Start" Margin="10,15,0,0">
+
+                                <Frame CornerRadius="40" Padding="5,5,5,0">
+                                    <styles:BorderlessEntry PlaceholderColor="#545454" WidthRequest="260" HeightRequest="40" FontSize="13" VerticalOptions="Center" HorizontalOptions="Center"
+                                                            Margin="0,0,0,4"/>
+                                </Frame>
+                            </Frame>
+                            
+                        </HorizontalStackLayout>
+
+                        <HorizontalStackLayout>
+                            <Label Text="PASSWORD" TextColor="Black" FontSize="20" FontFamily="Bebas-Regular" HorizontalOptions="Start" Margin="20,10,0,0"/>
+
+                            <Frame Padding="2" BackgroundColor="Black" BorderColor="Black" CornerRadius="40" WidthRequest="275" HeightRequest="35" HorizontalOptions="Start" Margin="10,5,0,0">
+
+                                <Frame CornerRadius="40" Padding="5,5,5,0">
+                                    <styles:BorderlessEntry PlaceholderColor="#545454" WidthRequest="260" HeightRequest="40" FontSize="13" VerticalOptions="Center" HorizontalOptions="Center"
+                                                            Margin="0,0,0,4"/>
+                                </Frame>
+                            </Frame>
+
+                        </HorizontalStackLayout>
+
+                        <HorizontalStackLayout>
+                            <Label Text="EMAIL" TextColor="Black" FontSize="20" FontFamily="Bebas-Regular" HorizontalOptions="Start" Margin="50,10,0,0"/>
+
+                            <Frame Padding="2" BackgroundColor="Black" BorderColor="Black" CornerRadius="40" WidthRequest="275" HeightRequest="35" HorizontalOptions="Start" Margin="10,5,0,0">
+
+                                <Frame CornerRadius="40" Padding="5,5,5,0">
+                                    <styles:BorderlessEntry PlaceholderColor="#545454" WidthRequest="260" HeightRequest="40" FontSize="13" VerticalOptions="Center" HorizontalOptions="Center"
+                                                            Margin="0,0,0,4"/>
+                                </Frame>
+                            </Frame>
+
+                        </HorizontalStackLayout>
+
+                        <Frame BackgroundColor="Black" BorderColor="Black" WidthRequest="150" HeightRequest="30" HorizontalOptions="Start" Margin="30,15,0,0" Padding="0" CornerRadius="15">
+                            <HorizontalStackLayout>
+                                <Image Source="validatewhite16.png" WidthRequest="16" HeightRequest="16" Margin="15,0,15,0"/>
+                                <Label Text="CREATE ACCOUNT" TextColor="White" FontSize="15" FontFamily="Bebas-Regular" HorizontalOptions="Center" VerticalOptions="Center"/>
+                            </HorizontalStackLayout>
+                        </Frame>
+
+                    </VerticalStackLayout>
+                                     
+                </Frame>
+
+            </Frame>
+
+            <Label Text="ADMIN ACCOUNTS" TextColor="Black" FontSize="20" FontFamily="Bebas-Regular" HorizontalOptions="Start" Margin="0,15,0,0"/>
+
+            <Frame Padding="3" BackgroundColor="Black" BorderColor="Black" CornerRadius="15" Margin="0,5,0,0" WidthRequest="460" HorizontalOptions="Start">
+
+                <Frame BackgroundColor="White" CornerRadius="10" HeightRequest="150">
+
+                </Frame>
+
+            </Frame>
+
+            <Label Text="FINGERPRINT SCANNER: ONLINE" TextColor="Black" FontSize="20" FontFamily="Bebas-Regular" HorizontalOptions="Start" Margin="0,20,0,0"/>
+
+            <HorizontalStackLayout Margin="0,10,0,0">
+
+                <Frame Padding="1" BackgroundColor="Black" BorderColor="Black" CornerRadius="25" WidthRequest="220" HeightRequest="35" HorizontalOptions="Start">
+
+                    <Frame BackgroundColor="#747474" BorderColor="#747474" CornerRadius="15" Padding="0">
+                        <Label Text="SYNC DATA TO CLOUD DATABASE" TextColor="Black" FontSize="18" FontFamily="Bebas-Regular" HorizontalOptions="Center" VerticalOptions="Center"/>
+                    </Frame>
+                </Frame>
+
+                <Label Text="SYNCED! / FAILED INTERNET REQUIRED!" TextColor="Black" FontSize="18" FontFamily="Bebas-Regular" HorizontalOptions="Center" Margin="5,5,0,0"/>
+
+            </HorizontalStackLayout>
+
+            <HorizontalStackLayout Margin="0,10,0,0">
+
+                <Frame Padding="1" BackgroundColor="Black" BorderColor="Black" CornerRadius="25" WidthRequest="220" HeightRequest="35" HorizontalOptions="Start">
+
+                    <Frame BackgroundColor="#747474" BorderColor="#747474" CornerRadius="15" Padding="0">
+                        <Label Text="SYNC DATA TO LOCAL DATABASE" TextColor="Black" FontSize="18" FontFamily="Bebas-Regular" HorizontalOptions="Center" VerticalOptions="Center"/>
+                    </Frame>
+                </Frame>
+
+                <Label Text="SYNCED! / FAILED INTERNET REQUIRED!" TextColor="Black" FontSize="18" FontFamily="Bebas-Regular" HorizontalOptions="Center" Margin="5,5,0,0"/>
+
+            </HorizontalStackLayout>
+
+        </VerticalStackLayout>
+
+        <VerticalStackLayout Margin="20,90,0,0">
+            
+            <Label Text="VALIDATE MEMBERSHIP ACCOUNT REQUESTS" TextColor="Black" FontSize="20" FontFamily="Bebas-Regular" HorizontalOptions="Start" Margin="0,0,0,5"/>
+
+            <Frame Padding="3" BackgroundColor="Black" BorderColor="Black" CornerRadius="15" WidthRequest="360" HorizontalOptions="Start">
+
+                <Frame BackgroundColor="White" CornerRadius="10" HeightRequest="365">
+
+                </Frame>
+
+            </Frame>
+
+            <HorizontalStackLayout Margin="0,10">
+                
+                <Frame BackgroundColor="Black" BorderColor="Black" WidthRequest="110" HeightRequest="30" HorizontalOptions="Start" Padding="0" CornerRadius="15" Margin="0,0,10,0">
+                    <HorizontalStackLayout>
+                        <Image Source="validatewhite16.png" WidthRequest="16" HeightRequest="16" Margin="10,0,5,0"/>
+                        <Label Text="VALIDATE ALL" TextColor="White" FontSize="15" FontFamily="Bebas-Regular" HorizontalOptions="Center" VerticalOptions="Center"/>
+                    </HorizontalStackLayout>
+                </Frame>
+
+                <Frame BackgroundColor="Black" BorderColor="Black" WidthRequest="100" HeightRequest="30" HorizontalOptions="Start" Padding="0" CornerRadius="15" Margin="0,0,20,0">
+                    <HorizontalStackLayout>
+                        <Image Source="validatewhite16.png" WidthRequest="16" HeightRequest="16" Margin="10,0,5,0"/>
+                        <Label Text="REJECT ALL" TextColor="White" FontSize="15" FontFamily="Bebas-Regular" HorizontalOptions="Center" VerticalOptions="Center"/>
+                    </HorizontalStackLayout>
+                </Frame>
+
+                <Frame BackgroundColor="Black" BorderColor="Black" WidthRequest="120" HeightRequest="30" HorizontalOptions="Start" Padding="0" CornerRadius="15">
+                    <HorizontalStackLayout>
+                        <Label Text="MANAGE ACCOUNTS" TextColor="White" FontSize="15" FontFamily="Bebas-Regular" VerticalOptions="Center" Margin="11,0,0,0"/>
+                    </HorizontalStackLayout>
+                </Frame>
+                                             
+            </HorizontalStackLayout>
+
+            <HorizontalStackLayout>
+                
+                <Label Text="DARK MODE:" FontFamily="Bebas-Regular" FontSize="20" TextColor="Black" Padding="0" Margin="0,69,0,0"/>
+                <Switch HorizontalOptions="Start" ThumbColor="Black" WidthRequest="35" HeightRequest="20" Margin="8,50,0,0"/>
+
+                <Frame BackgroundColor="Black" BorderColor="Black" WidthRequest="225" HeightRequest="65" Margin="10,50,0,0">
+                    <HorizontalStackLayout>
+                        <Image Source="warningwhite64.png" WidthRequest="24" HeightRequest="24" HorizontalOptions="Center" VerticalOptions="Start"/>
+                        <Label Text="CLEAR LOCAL DATABASE" TextColor="White" FontSize="19" FontFamily="Bebas-Regular" HorizontalOptions="Center" Margin="10,0,0,0"/>
+                    </HorizontalStackLayout>
+                </Frame>
+
+            </HorizontalStackLayout>
+            
+        </VerticalStackLayout>
+        
+    </HorizontalStackLayout>
+
+        <Frame BackgroundColor="Black" BorderColor="Black" Margin="30,38,30,0" CornerRadius="25" HeightRequest="25"/>
+
+    </VerticalStackLayout>
+
+</ContentPage>

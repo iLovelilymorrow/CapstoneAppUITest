@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="CapstoneAppUITest.Views.PageView2"
+             BackgroundColor="#747474"
+             xmlns:styles="clr-namespace:CapstoneAppUITest.Resources.Styles">
+
+    <VerticalStackLayout>
+
+        <HorizontalStackLayout>
+
+            <Frame Padding="3" Margin="30,30,0,0" BackgroundColor="Black" BorderColor="Black" CornerRadius="40" WidthRequest="700" HorizontalOptions="Start">
+          
+                <Frame CornerRadius="40" Padding="5,5,5,0">
+
+                    <HorizontalStackLayout>
+                    
+                    <Image Source="search32.png" WidthRequest="32" HeightRequest="32" Margin="20,0,0,5"/> 
+
+                    <styles:BorderlessEntry Placeholder="SEARCH MEMBER NAME, MEMBER CODE" PlaceholderColor="#545454" Margin="10,0,0,0" WidthRequest="605" HeightRequest="40" 
+                    FontFamily="Bebas-Regular" FontSize="19" VerticalOptions="Center"/>
+
+                </HorizontalStackLayout>
+                    
+            </Frame>
+         
+        </Frame>
+
+            <Image Source="filterblack16.png" WidthRequest="48" HeightRequest="48" Margin="5,30,0,0"/>
+
+            <Label Text="FILTERS" FontSize="30" FontFamily="Bebas-Regular" Margin="2,40,0,0"/>
+
+        </HorizontalStackLayout>
+
+        <HorizontalStackLayout>
+
+            <Frame BackgroundColor="black" BorderColor="Black" WidthRequest="250" HeightRequest="50" HorizontalOptions="Start" Margin="30,10,0,0" CornerRadius="40" Padding="0">
+
+            <HorizontalStackLayout>
+
+                <Image Source="addwhite16.png" WidthRequest="32" HeightRequest="32" Margin="55,0,0,0"/>
+
+                <Label Text="ADD MEMBER" FontSize="21" FontFamily="Bebas-Regular" TextColor="White" Margin="10,0,0,0" VerticalOptions="Center"/>
+
+            </HorizontalStackLayout>
+
+        </Frame>
+
+            <Label Text="FILTER: NONE" FontSize="30" FontFamily="Bebas-Regular" VerticalOptions="Center" Margin="10,5,0,0"/>
+
+        </HorizontalStackLayout>
+
+        <Frame BackgroundColor="Black" BorderColor="Black" CornerRadius="30" Margin="30,10,30,0" HeightRequest="10"/>
+
+        <Frame BackgroundColor="Black" BorderColor="Black" Margin="30,35,30,0" CornerRadius="10" WidthRequest="880" HeightRequest="65" HorizontalOptions="Start" Padding="0">
+
+            <HorizontalStackLayout>
+                <Frame BackgroundColor="Brown" WidthRequest="45" HeightRequest="50" Margin="20,0,0,0"/>
+                <Label Text="NAME: IVAN CARREON (001)" TextColor="White" FontSize="24" FontFamily="Bebas-Regular" VerticalOptions="Center" Margin="15,0,0,3"/>
+                <Label Text="MEMBER: REGULAR" TextColor="White" FontSize="24" FontFamily="Bebas-Regular" VerticalOptions="Center" Margin="15,0,0,3"/>
+                <Label Text="START/END DATE: MARCH 12,2025 - APRIL 12, 2025" TextColor="#b8b4b4" FontSize="22" FontFamily="Bebas-Regular" VerticalOptions="Center" Margin="15,2,0,3"/>
+                <Label Text=":" TextColor="White" FontSize="28" FontAttributes="Bold" VerticalOptions="Center" Margin="20,0,0,8"/>
+            </HorizontalStackLayout>
+
+        </Frame>
+
+        <HorizontalStackLayout>
+            <Frame BackgroundColor="Black" BorderColor="Black" Margin="30,35,20,0" CornerRadius="10" WidthRequest="430" HeightRequest="65" HorizontalOptions="Start" Padding="0">
+
+                <HorizontalStackLayout>
+
+                    <Frame BackgroundColor="Brown" WidthRequest="45" HeightRequest="50" Margin="20,0,0,0"/>
+
+                    <VerticalStackLayout>
+
+                        <HorizontalStackLayout>
+
+                            <Label Text="NAME: IVAN CARREON (001)" TextColor="White" FontSize="19" FontFamily="Bebas-Regular" VerticalOptions="Center" Margin="10,8,0,0"/>
+                            <Label Text="MEMBER: REGULAR" TextColor="White" FontSize="19" FontFamily="Bebas-Regular" VerticalOptions="Center" Margin="10,8,0,0"/>
+
+                        </HorizontalStackLayout>
+
+                        <Label Text="START/END DATE: MARCH 12,2025 - APRIL 12, 2025" TextColor="#b8b4b4" FontSize="17" FontFamily="Bebas-Regular" VerticalOptions="Center" Margin="10,0,0,0"/>
+
+                    </VerticalStackLayout>
+
+                    <Label Text=":" TextColor="White" FontSize="28" FontAttributes="Bold" VerticalOptions="Center" Margin="25,0,0,8"/>
+
+                </HorizontalStackLayout>
+
+            </Frame>
+
+            <Frame BackgroundColor="Black" BorderColor="Black" Margin="0,35,30,0" CornerRadius="10" WidthRequest="430" HeightRequest="65" HorizontalOptions="Start" Padding="0">
+
+                <HorizontalStackLayout>
+
+                    <Frame BackgroundColor="Brown" WidthRequest="45" HeightRequest="50" Margin="20,0,0,0"/>
+
+                    <VerticalStackLayout>
+
+                        <HorizontalStackLayout>
+
+                            <Label Text="NAME: IVAN CARREON (001)" TextColor="White" FontSize="19" FontFamily="Bebas-Regular" VerticalOptions="Center" Margin="10,8,0,0"/>
+                            <Label Text="MEMBER: REGULAR" TextColor="White" FontSize="19" FontFamily="Bebas-Regular" VerticalOptions="Center" Margin="10,8,0,0"/>
+
+                        </HorizontalStackLayout>
+
+                        <Label Text="START/END DATE: MARCH 12,2025 - APRIL 12, 2025" TextColor="#b8b4b4" FontSize="17" FontFamily="Bebas-Regular" VerticalOptions="Center" Margin="10,0,0,0"/>
+
+                    </VerticalStackLayout>
+
+                    <Frame x:Name="memberOptions" BackgroundColor="Black" BorderColor="Black" WidthRequest="30" HeightRequest="40" Padding="0" Margin="10,0,0,0">
+                        <Label Text=":" TextColor="White" FontSize="25" FontAttributes="Bold" VerticalOptions="Center" HorizontalOptions="Center" Margin="0,0,2,10"/>
+                    </Frame>
+
+                </HorizontalStackLayout>
+
+            </Frame>
+            
+        </HorizontalStackLayout>
+
+        <Frame BackgroundColor="Black" BorderColor="Black" Margin="30,328,30,0" CornerRadius="25" HeightRequest="25"/>
+
+    </VerticalStackLayout>
+    
+</ContentPage>

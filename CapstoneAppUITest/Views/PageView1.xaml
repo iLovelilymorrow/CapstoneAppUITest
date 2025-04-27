@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="CapstoneAppUITest.Views.PageView1"
+             BackgroundColor="#747474"
+             xmlns:helpers="clr-namespace:CapstoneAppUITest.Helpers">
+
+    <AbsoluteLayout>
+
+        <Frame BackgroundColor="Black" BorderColor="Black" CornerRadius="20" AbsoluteLayout.LayoutBounds="0.05, 0.05, 0.465, 0.26" AbsoluteLayout.LayoutFlags="All">
+
+            <HorizontalStackLayout VerticalOptions="Center" HorizontalOptions="Center">
+
+                <Image WidthRequest="{x:Static helpers:UIScaler.imageSize}" HeightRequest="{x:Static helpers:UIScaler.imageSize}" Source="addmember64.png" HorizontalOptions="Center" VerticalOptions="Center" Margin="0,0,10,0"/>
+
+                <Label x:Name="niggaLabel" Text="ADD NEW MEMBER" FontSize="{x:Static helpers:UIScaler.fontSize}" FontFamily="Bebas-Regular" TextColor="White" HorizontalOptions="Center" VerticalOptions="Center"/>
+
+            </HorizontalStackLayout>
+
+            <Frame.GestureRecognizers>
+                <TapGestureRecognizer NumberOfTapsRequired="1" Tapped="TapGestureRecognizer_Tapped"/>
+            </Frame.GestureRecognizers>
+            
+        </Frame>
+
+        <Frame BackgroundColor="Black" BorderColor="Black" CornerRadius="20" AbsoluteLayout.LayoutBounds=".95, 0.05, 0.465, 0.26" AbsoluteLayout.LayoutFlags="All">
+
+            <HorizontalStackLayout VerticalOptions="Center" HorizontalOptions="Center">
+
+                <Image Source="notificationwhite64.png" HeightRequest="{x:Static helpers:UIScaler.imageSize}" WidthRequest="{x:Static helpers:UIScaler.imageSize}" Margin="0,0,10,0"/>
+
+                <Label Text="UNREAD NOTIFICATIONS" FontFamily="Bebas-Regular" FontSize="{x:Static helpers:UIScaler.fontSize}" TextColor="White" HorizontalOptions="Center" VerticalOptions="Center"/>
+
+            </HorizontalStackLayout>
+
+        </Frame>
+
+        <Frame x:Name="frame1" BackgroundColor="Black" BorderColor="Black" CornerRadius="20" AbsoluteLayout.LayoutBounds="0.05, .445, 0.465, 0.26" AbsoluteLayout.LayoutFlags="All">
+
+            <HorizontalStackLayout VerticalOptions="Center" HorizontalOptions="Center">
+
+                <Image Source="search64.png" HeightRequest="{x:Static helpers:UIScaler.imageSize}" WidthRequest="{x:Static helpers:UIScaler.imageSize}" Margin="0,0,10,0" VerticalOptions="Center" HorizontalOptions="Center"/>
+
+                <Label Text="SEARCH MEMBER" FontFamily="Bebas-Regular" FontSize="{x:Static helpers:UIScaler.fontSize}" TextColor="White" HorizontalOptions="Center" VerticalOptions="Center"/>
+
+            </HorizontalStackLayout>
+
+        </Frame>
+
+        <Frame BackgroundColor="Black" BorderColor="Black" CornerRadius="20" AbsoluteLayout.LayoutBounds=".95, .445, 0.465, 0.26" AbsoluteLayout.LayoutFlags="All">
+
+            <HorizontalStackLayout VerticalOptions="Center" HorizontalOptions="Center">
+
+                <Image Source="promowhite64.png" HeightRequest="{x:Static helpers:UIScaler.imageSize}" WidthRequest="{x:Static helpers:UIScaler.imageSize}" Margin="0,0,10,0"/>
+
+                <Label Text="CREATE PROMO" FontFamily="Bebas-Regular" FontSize="{x:Static helpers:UIScaler.fontSize}" TextColor="White" HorizontalOptions="Center" VerticalOptions="Center"/>
+
+            </HorizontalStackLayout>
+
+        </Frame>
+
+        <Frame Padding="3" BackgroundColor="Black" BorderColor="Black" CornerRadius="15" AbsoluteLayout.LayoutBounds="0.05, .88, 0.465, 0.3" AbsoluteLayout.LayoutFlags="All">
+
+            <Frame BackgroundColor="White" CornerRadius="10">
+
+                <Label Text="Hello, Thick Border!" HorizontalOptions="Center" VerticalOptions="Center"/>
+
+            </Frame>
+
+        </Frame>
+
+        <Frame Padding="3" BackgroundColor="Black" BorderColor="Black" CornerRadius="15" AbsoluteLayout.LayoutBounds=".95, .88, 0.465, 0.3" AbsoluteLayout.LayoutFlags="All">
+
+            <Frame BackgroundColor="White" CornerRadius="10">
+
+                <Label Text="Hello, Thick Border!" HorizontalOptions="Center" VerticalOptions="Center"/>
+
+            </Frame>
+
+        </Frame>
+
+        <Frame BackgroundColor="Black" BorderColor="Black" Margin="30,0,30,0" CornerRadius="25" AbsoluteLayout.LayoutBounds="0.05, .97, 1, 0.03" AbsoluteLayout.LayoutFlags="All"/>
+    </AbsoluteLayout>
+    
+</ContentPage> 

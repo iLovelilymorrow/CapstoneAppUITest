@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="CapstoneAppUITest.Views.TestingView"
+             BackgroundColor="Orange">
+
+    <AbsoluteLayout>
+
+        <Frame BackgroundColor="Black" BorderColor="Black" CornerRadius="20" AbsoluteLayout.LayoutBounds="0.05, 0.5, 0.4, 0.2" AbsoluteLayout.LayoutFlags="All">
+
+            <StackLayout VerticalOptions="Center" HorizontalOptions="Center">
+
+                <Image WidthRequest="80" HeightRequest="80" Source="addmember64.png" HorizontalOptions="Center"/>
+
+                <Label Text="ADD NEW MEMBER" FontSize="45" FontFamily="Bebas-Regular" TextColor="White" HorizontalOptions="Center"/>
+
+            </StackLayout>
+
+        </Frame>
+
+        <Frame AbsoluteLayout.LayoutBounds="0.05, 0.5, 0.4, 0.2" AbsoluteLayout.LayoutFlags="All" BackgroundColor="Red"/>
+
+        <Frame AbsoluteLayout.LayoutBounds="0.05, 0.6, 0.4, 0.2" AbsoluteLayout.LayoutFlags="All" BackgroundColor="Green"/>
+
+        <Frame AbsoluteLayout.LayoutBounds="0.55, 0.5, 0.4, 0.2" AbsoluteLayout.LayoutFlags="All" BackgroundColor="Blue"/>
+
+        <Frame AbsoluteLayout.LayoutBounds="0.55, 0.6, 0.4, 0.2" AbsoluteLayout.LayoutFlags="All" BackgroundColor="Yellow"/>
+
+        <Frame BackgroundColor="Black" BorderColor="Black" Margin="30,0,30,0" CornerRadius="25" AbsoluteLayout.LayoutBounds="0.05, .97, 1, 0.03" AbsoluteLayout.LayoutFlags="All"/>
+
+    </AbsoluteLayout>
+
+</ContentPage>
