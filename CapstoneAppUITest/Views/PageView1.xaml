@@ -11,9 +11,9 @@
 
             <HorizontalStackLayout VerticalOptions="Center" HorizontalOptions="Center">
 
-                <Image WidthRequest="{x:Static helpers:UIScaler.imageSize}" HeightRequest="{x:Static helpers:UIScaler.imageSize}" Source="addmember64.png" HorizontalOptions="Center" VerticalOptions="Center" Margin="0,0,10,0"/>
+                <Image WidthRequest="{x:Static helpers:UIScaler.imageSizeByDensity}" HeightRequest="{x:Static helpers:UIScaler.imageSizeByDensity}" Source="addmember64.png" HorizontalOptions="Center" VerticalOptions="Center" Margin="0,0,10,0"/>
 
-                <Label x:Name="niggaLabel" Text="ADD NEW MEMBER" FontSize="{x:Static helpers:UIScaler.fontSize}" FontFamily="Bebas-Regular" TextColor="White" HorizontalOptions="Center" VerticalOptions="Center"/>
+                <Label x:Name="niggaLabel" Text="ADD NEW MEMBER" FontSize="{x:Static helpers:UIScaler.fontSizeByDensity}" FontFamily="Bebas-Regular" TextColor="White" HorizontalOptions="Center" VerticalOptions="Center"/>
 
             </HorizontalStackLayout>
 
@@ -27,9 +27,9 @@
 
             <HorizontalStackLayout VerticalOptions="Center" HorizontalOptions="Center">
 
-                <Image Source="notificationwhite64.png" HeightRequest="{x:Static helpers:UIScaler.imageSize}" WidthRequest="{x:Static helpers:UIScaler.imageSize}" Margin="0,0,10,0"/>
+                <Image Source="notificationwhite64.png" HeightRequest="{x:Static helpers:UIScaler.imageSizeByDensity}" WidthRequest="{x:Static helpers:UIScaler.imageSizeByDensity}" Margin="0,0,10,0"/>
 
-                <Label Text="UNREAD NOTIFICATIONS" FontFamily="Bebas-Regular" FontSize="{x:Static helpers:UIScaler.fontSize}" TextColor="White" HorizontalOptions="Center" VerticalOptions="Center"/>
+                <Label Text="UNREAD NOTIFICATIONS" FontFamily="Bebas-Regular" FontSize="{x:Static helpers:UIScaler.fontSizeByDensity}" TextColor="White" HorizontalOptions="Center" VerticalOptions="Center"/>
 
             </HorizontalStackLayout>
 
@@ -39,9 +39,9 @@
 
             <HorizontalStackLayout VerticalOptions="Center" HorizontalOptions="Center">
 
-                <Image Source="search64.png" HeightRequest="{x:Static helpers:UIScaler.imageSize}" WidthRequest="{x:Static helpers:UIScaler.imageSize}" Margin="0,0,10,0" VerticalOptions="Center" HorizontalOptions="Center"/>
+                <Image Source="search64.png" HeightRequest="{x:Static helpers:UIScaler.imageSizeByDensity}" WidthRequest="{x:Static helpers:UIScaler.imageSizeByDensity}" Margin="0,0,10,0" VerticalOptions="Center" HorizontalOptions="Center"/>
 
-                <Label Text="SEARCH MEMBER" FontFamily="Bebas-Regular" FontSize="{x:Static helpers:UIScaler.fontSize}" TextColor="White" HorizontalOptions="Center" VerticalOptions="Center"/>
+                <Label Text="SEARCH MEMBER" FontFamily="Bebas-Regular" FontSize="{x:Static helpers:UIScaler.fontSizeByDensity}" TextColor="White" HorizontalOptions="Center" VerticalOptions="Center"/>
 
             </HorizontalStackLayout>
 
@@ -51,9 +51,9 @@
 
             <HorizontalStackLayout VerticalOptions="Center" HorizontalOptions="Center">
 
-                <Image Source="promowhite64.png" HeightRequest="{x:Static helpers:UIScaler.imageSize}" WidthRequest="{x:Static helpers:UIScaler.imageSize}" Margin="0,0,10,0"/>
+                <Image Source="promowhite64.png" HeightRequest="{x:Static helpers:UIScaler.imageSizeByDensity}" WidthRequest="{x:Static helpers:UIScaler.imageSizeByDensity}" Margin="0,0,10,0"/>
 
-                <Label Text="CREATE PROMO" FontFamily="Bebas-Regular" FontSize="{x:Static helpers:UIScaler.fontSize}" TextColor="White" HorizontalOptions="Center" VerticalOptions="Center"/>
+                <Label Text="CREATE PROMO" FontFamily="Bebas-Regular" FontSize="{x:Static helpers:UIScaler.fontSizeByDensity}" TextColor="White" HorizontalOptions="Center" VerticalOptions="Center"/>
 
             </HorizontalStackLayout>
 

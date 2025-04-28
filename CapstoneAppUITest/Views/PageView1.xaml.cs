@@ -14,6 +14,7 @@ public partial class PageView1 : ContentPage
      Debug.WriteLine("DISPLAY RES");
      Debug.WriteLine(DeviceDisplay.MainDisplayInfo.Width +" "+ DeviceDisplay.MainDisplayInfo.Height);
      Debug.WriteLine(niggaLabel.FontSize);
+     Debug.WriteLine(DeviceDisplay.MainDisplayInfo.Density);
     }
 
     /*
