@@ -8,16 +8,16 @@
 
     <AbsoluteLayout>
 
-        <Frame Padding="3" BackgroundColor="Black" BorderColor="Black" CornerRadius="40" AbsoluteLayout.LayoutBounds="0.13, 0.042, .8, .055" AbsoluteLayout.LayoutFlags="All">
+        <Frame Padding="3" BackgroundColor="Black" BorderColor="Black" CornerRadius="40" AbsoluteLayout.LayoutBounds=".09, 0.042, .8, .055" AbsoluteLayout.LayoutFlags="All">
 
             <Frame CornerRadius="40" Padding="5,5,5,0">
 
                 <AbsoluteLayout>
 
-                    <Image Source="search32.png"/>
+                    <Image Source="search32.png" AbsoluteLayout.LayoutBounds="-15.4, -.2, .97, .9" AbsoluteLayout.LayoutFlags="All"/>
 
-                    <styles:BorderlessEntry Placeholder="SEARCH MEMBER NAME, MEMBER CODE" PlaceholderColor="#545454" Margin="10,0,0,0" FontFamily="Bebas-Regular" 
-                                            FontSize="19" AbsoluteLayout.LayoutBounds="0.8, 1, .97, 1" AbsoluteLayout.LayoutFlags="All"/>
+                    <styles:BorderlessEntry Placeholder="SEARCH MEMBER NAME, MEMBER CODE" PlaceholderColor="#545454" FontFamily="Bebas-Regular" 
+                                            FontSize="22" AbsoluteLayout.LayoutBounds="1.4, .9, .97, 1.1" AbsoluteLayout.LayoutFlags="All"/>
 
                 </AbsoluteLayout>
 
@@ -25,11 +25,28 @@
 
         </Frame>
 
-        <Image Source="filterblack16.png" AbsoluteLayout.LayoutBounds=".867, 0.045, .05,.05" AbsoluteLayout.LayoutFlags="All"/>
-        <!-- palit picture mas malinaw 055 AbsoluteLayout.LayoutBounds=".4,0.1" AbsoluteLayout.LayoutFlags="WidthProportional"-->
+        <Image Source="filter.png" AbsoluteLayout.LayoutBounds=".855, 0.045, .05,.05" AbsoluteLayout.LayoutFlags="All"/>
 
-        <Label Text="FILTERS" FontSize="30" FontFamily="Bebas-Regular" AbsoluteLayout.LayoutBounds=".909, 0.052" AbsoluteLayout.LayoutFlags="PositionProportional"/>
+        <Label Text="FILTERS" FontSize="30" FontFamily="Bebas-Regular" AbsoluteLayout.LayoutBounds=".896, 0.052" AbsoluteLayout.LayoutFlags="PositionProportional"/>
 
+        <Frame BackgroundColor="black" BorderColor="Black" CornerRadius="40" AbsoluteLayout.LayoutBounds=".023, .11, .14, .055" AbsoluteLayout.LayoutFlags="All" Padding="0">
+
+            <AbsoluteLayout>
+
+                <Image Source="addwhite64.png" AbsoluteLayout.LayoutBounds="-11, .5, .98, .7" AbsoluteLayout.LayoutFlags="All"/>
+
+                <Label Text="ADD MEMBER" FontSize="21" FontFamily="Bebas-Regular" TextColor="White" AbsoluteLayout.LayoutBounds=".7, .5" AbsoluteLayout.LayoutFlags="PositionProportional"/>
+
+            </AbsoluteLayout>
+
+        </Frame>
+
+        <Label Text="FILTERS: GAWIN MO IVAN YUNG FUNCTION NETO AHH (AYOS NA PWESTO NETO NAG TYPE KA KASI)" FontSize="40" FontFamily="Bebas-Regular" AbsoluteLayout.LayoutBounds=".185, 0.11" AbsoluteLayout.LayoutFlags="PositionProportional"/>
+
+        <Frame BackgroundColor="Black" BorderColor="Black" Margin="30,0,30,0" CornerRadius="25" AbsoluteLayout.LayoutBounds="0.05, .18, 1, 0.02" AbsoluteLayout.LayoutFlags="All"/>
+        
+        
+        
         <Frame BackgroundColor="Black" BorderColor="Black" Margin="30,0,30,0" CornerRadius="25" AbsoluteLayout.LayoutBounds="0.05, .97, 1, 0.03" AbsoluteLayout.LayoutFlags="All"/>
         
     </AbsoluteLayout>

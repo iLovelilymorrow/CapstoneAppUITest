@@ -12,9 +12,5 @@ namespace CapstoneAppUITest.Helpers {
 
         public static double fontSizeByDensity => 65 / screenDensity;
         public static double imageSizeByDensity => 105 / screenDensity;
-
-        public static double fontSize => 65 * (screenWidth / 1920);
-
-        public static double imageSize => 105 * (screenWidth / 1920);
     }
 }

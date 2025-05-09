@@ -4,38 +4,52 @@
              x:Class="CapstoneAppUITest.Views.PageView3"
              BackgroundColor="#747474">
 
-    <VerticalStackLayout>
+    <AbsoluteLayout>
+
+        <Frame BackgroundColor="Black" BorderColor="Black" AbsoluteLayout.LayoutBounds=".023, .09, .08, .035" AbsoluteLayout.LayoutFlags="All" Padding="0" CornerRadius="25">
+
+            <AbsoluteLayout>
+
+                <Label Text="TODAY" TextColor="White" FontSize="22" FontFamily="Bebas-Regular" AbsoluteLayout.LayoutBounds=".5,.3" AbsoluteLayout.LayoutFlags="PositionProportional"/>
+
+            </AbsoluteLayout>
+                        
+        </Frame>
+
+        <Frame BackgroundColor="Black" BorderColor="Black" AbsoluteLayout.LayoutBounds=".13, .09, .12, .035" AbsoluteLayout.LayoutFlags="All" Padding="0" CornerRadius="25">
+
+            <AbsoluteLayout>
+
+                <Label Text="MARK ALL AS READ" TextColor="White" FontSize="22" FontFamily="Bebas-Regular" AbsoluteLayout.LayoutBounds=".505,.3" AbsoluteLayout.LayoutFlags="PositionProportional"/>
+
+            </AbsoluteLayout>
+
+        </Frame>
         
-        <HorizontalStackLayout>
+        <Frame BackgroundColor="Black" BorderColor="Black" AbsoluteLayout.LayoutBounds=".27, .09, .09, .035" AbsoluteLayout.LayoutFlags="All" Padding="0" CornerRadius="25">
 
-            <Frame BackgroundColor="Black" BorderColor="Black" WidthRequest="120" HeightRequest="35" HorizontalOptions="Start" Margin="30,30,0,20" Padding="0" CornerRadius="25">
+            <AbsoluteLayout>
 
-                <Label Text="TODAY" TextColor="White" FontSize="22" FontFamily="Bebas-Regular" HorizontalOptions="Center" VerticalOptions="Center"/>
+                <Label Text="CLEAR ALL" TextColor="White" FontSize="22" FontFamily="Bebas-Regular" AbsoluteLayout.LayoutBounds=".5,.3" AbsoluteLayout.LayoutFlags="PositionProportional"/>
 
-            </Frame>
+            </AbsoluteLayout>
 
-            <Frame BackgroundColor="Black" BorderColor="Black" WidthRequest="160" HeightRequest="35" HorizontalOptions="Start" Margin="30,30,0,20" Padding="0" CornerRadius="25">
+        </Frame>
 
-                <Label Text="MARK ALL AS READ" TextColor="White" FontSize="22" FontFamily="Bebas-Regular" HorizontalOptions="Center" VerticalOptions="Center"/>
+        <Frame BackgroundColor="Black" BorderColor="Black" AbsoluteLayout.LayoutBounds=".38, .09, .08, .035" AbsoluteLayout.LayoutFlags="All" Padding="0" CornerRadius="25">
 
-            </Frame>
+            <AbsoluteLayout>
 
-            <Frame BackgroundColor="Black" BorderColor="Black" WidthRequest="120" HeightRequest="35" HorizontalOptions="Start" Margin="15,30,0,20" Padding="0" CornerRadius="25">
+                <Label Text="FILTER" TextColor="White" FontSize="22" FontFamily="Bebas-Regular" AbsoluteLayout.LayoutBounds=".5,.3" AbsoluteLayout.LayoutFlags="PositionProportional"/>
 
-                <Label Text="CLEAR ALL" TextColor="White" FontSize="22" FontFamily="Bebas-Regular" HorizontalOptions="Center" VerticalOptions="Center"/>
+            </AbsoluteLayout>
 
-            </Frame>
+        </Frame>
 
-            <Frame BackgroundColor="Black" BorderColor="Black" WidthRequest="120" HeightRequest="35" HorizontalOptions="Start" Margin="10,30,0,20" Padding="0" CornerRadius="25">
+        <Label Text="NO NOTIFICATIONS YET. / APRIL 9, 2025" FontSize="30" FontFamily="Bebas-Regular" AbsoluteLayout.LayoutBounds=".03, .145" AbsoluteLayout.LayoutFlags="PositionProportional"/>
 
-                <Label Text="FILTER" TextColor="White" FontSize="22" FontFamily="Bebas-Regular" HorizontalOptions="Center" VerticalOptions="Center"/>
+        <Frame BackgroundColor="Black" BorderColor="Black" Margin="30,0,30,0" CornerRadius="25" AbsoluteLayout.LayoutBounds="0.05, .97, 1, 0.03" AbsoluteLayout.LayoutFlags="All"/>
 
-            </Frame>
-
-        </HorizontalStackLayout>
-
-        <Frame BackgroundColor="Black" BorderColor="Black" Margin="30,618,30,0" CornerRadius="25" HeightRequest="25"/>
-
-    </VerticalStackLayout>
+    </AbsoluteLayout>
     
 </ContentPage>

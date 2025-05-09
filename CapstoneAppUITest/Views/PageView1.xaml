@@ -80,6 +80,7 @@
         </Frame>
 
         <Frame BackgroundColor="Black" BorderColor="Black" Margin="30,0,30,0" CornerRadius="25" AbsoluteLayout.LayoutBounds="0.05, .97, 1, 0.03" AbsoluteLayout.LayoutFlags="All"/>
+        
     </AbsoluteLayout>
     
 </ContentPage> 
