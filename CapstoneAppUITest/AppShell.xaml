@@ -11,89 +11,89 @@
     FlyoutBackgroundColor="Black">
 
     <Shell.FlyoutContent>
-        <VerticalStackLayout>
 
-            <VerticalStackLayout>
+        <AbsoluteLayout>
 
-                <Frame x:Name="homePageButton" BackgroundColor="#171717" BorderColor="Black" VerticalOptions="Center" HorizontalOptions="Start" HeightRequest="50" WidthRequest="260"  Padding="0" Margin="20,20,0,0">
-                    <HorizontalStackLayout>
-                        <Label x:Name="homePageOpened" BackgroundColor="White" WidthRequest="4" HeightRequest="18" Margin="20,0,0,0" IsVisible="True"/>
-                        <Image Source="homewhite24.png" HeightRequest="24" WidthRequest="24" Margin="10,0,10,0"/>
-                        <Label Text="HOME" FontFamily="Bebas-Regular" FontSize="23" VerticalOptions="Center" TextColor="White"/>
-                    </HorizontalStackLayout>
+            <Frame x:Name="homePageButton" BackgroundColor="#171717" BorderColor="Black" Padding="0" AbsoluteLayout.LayoutBounds=".5, .05, .8, .055" AbsoluteLayout.LayoutFlags="All">
 
-                    <Frame.GestureRecognizers>
-                        <TapGestureRecognizer NumberOfTapsRequired="1" Tapped="homePageButtonTapped"/>
-                    </Frame.GestureRecognizers>
-                </Frame>
+                <AbsoluteLayout>
 
-                <Frame x:Name="memberListPageButton" BackgroundColor="Black" BorderColor="Black" VerticalOptions="Center" HorizontalOptions="Start" HeightRequest="50" WidthRequest="260"  Padding="0" Margin="20,15,0,0">
-                    <HorizontalStackLayout>
-                        <Label x:Name="memberListPageOpened" BackgroundColor="White" WidthRequest="4" HeightRequest="18" Margin="20,0,0,0" IsVisible="False"/>
-                        <Image Source="memberwhite24.png" HeightRequest="24" WidthRequest="24" Margin="10,0,10,0"/>
-                        <Label Text="MEMBER LIST" FontFamily="Bebas-Regular" FontSize="23" VerticalOptions="Center" TextColor="White"/>
-                    </HorizontalStackLayout>
+                    <Label x:Name="homePageOpened" BackgroundColor="White" IsVisible="True" AbsoluteLayout.LayoutBounds=".06, .5, .02, .6" AbsoluteLayout.LayoutFlags="All"/>
+                    <Image Source="homewhite.png" AbsoluteLayout.LayoutBounds=".12, .5, .15, .65" AbsoluteLayout.LayoutFlags="All"/>
+                    <Label Text="HOME" FontFamily="Bebas-Regular" FontSize="25" TextColor="White" AbsoluteLayout.LayoutBounds=".36, .5" AbsoluteLayout.LayoutFlags="PositionProportional"/>
 
-                    <Frame.GestureRecognizers>
-                        <TapGestureRecognizer NumberOfTapsRequired="1" Tapped="memberListPageButtonTapped"/>
-                    </Frame.GestureRecognizers>
-                </Frame>
+                </AbsoluteLayout>
 
-                <Frame x:Name="promoPageButton" BackgroundColor="Black" BorderColor="Black" VerticalOptions="Center" HorizontalOptions="Start" HeightRequest="50" WidthRequest="260"  Padding="0" Margin="20,15,0,0">
-                    <HorizontalStackLayout>
-                        <Label x:Name="promoPageOpened" BackgroundColor="White" WidthRequest="4" HeightRequest="18" Margin="20,0,0,0" IsVisible="False"/>
-                        <Image Source="promowhite64.png" HeightRequest="24" WidthRequest="24" Margin="10,0,10,0"/>
-                        <Label Text="PROMOS" FontFamily="Bebas-Regular" FontSize="23" VerticalOptions="Center" TextColor="White"/>
-                    </HorizontalStackLayout>
+                <Frame.GestureRecognizers>
+                    <TapGestureRecognizer NumberOfTapsRequired="1" Tapped="homePageButtonTapped"/>
+                </Frame.GestureRecognizers>
 
-                    <Frame.GestureRecognizers>
-                        <TapGestureRecognizer NumberOfTapsRequired="1" Tapped="promoPageButtonTapped"/>
-                    </Frame.GestureRecognizers>
-                </Frame>
+            </Frame>
 
-                <Frame x:Name="notificationPageButton" BackgroundColor="Black" BorderColor="Black" VerticalOptions="Center" HorizontalOptions="Start" HeightRequest="50" WidthRequest="260"  Padding="0" Margin="20,15,0,0">
-                    <HorizontalStackLayout>
-                        <Label x:Name="notificationPageOpened" BackgroundColor="White" WidthRequest="4" HeightRequest="18" Margin="20,0,0,0" IsVisible="False"/>
-                        <Image Source="notificationwhite24.png" HeightRequest="24" WidthRequest="24" Margin="10,0,10,0"/>
-                        <Label Text="NOTIFICATIONS" FontFamily="Bebas-Regular" FontSize="23" VerticalOptions="Center" TextColor="White"/>
-                    </HorizontalStackLayout>
+            <Frame x:Name="memberListPageButton" BackgroundColor="Black" BorderColor="Black" Padding="0" AbsoluteLayout.LayoutBounds=".5, .14, .8, .055" AbsoluteLayout.LayoutFlags="All">
 
-                    <Frame.GestureRecognizers>
-                        <TapGestureRecognizer NumberOfTapsRequired="1" Tapped="notificationPageButtonTapped"/>
-                    </Frame.GestureRecognizers>
-                </Frame>
+                <AbsoluteLayout>
+                    <Label x:Name="memberListPageOpened" BackgroundColor="White" IsVisible="False" AbsoluteLayout.LayoutBounds=".06, .5, .02, .6" AbsoluteLayout.LayoutFlags="All"/>
+                    <Image Source="memberswhite.png" AbsoluteLayout.LayoutBounds=".12, .5, .15, .65" AbsoluteLayout.LayoutFlags="All"/>
+                    <Label Text="MEMBER LIST" FontFamily="Bebas-Regular" FontSize="23" TextColor="White" AbsoluteLayout.LayoutBounds=".52, .5" AbsoluteLayout.LayoutFlags="PositionProportional"/>
+                </AbsoluteLayout>
 
-                <Frame x:Name="adminControlPageButton" BackgroundColor="Black" BorderColor="Black" VerticalOptions="Center" HorizontalOptions="Start" HeightRequest="50" WidthRequest="260"  Padding="0" Margin="20,15,0,0">
-                    <HorizontalStackLayout>
-                        <Label x:Name="adminControlPageOpened" BackgroundColor="White" WidthRequest="4" HeightRequest="18" Margin="20,0,0,0" IsVisible="False"/>
-                        <Image Source="adminwhite24.png" HeightRequest="24" WidthRequest="24" Margin="10,0,10,0"/>
-                        <Label Text="ADMIN CONTROLS" FontFamily="Bebas-Regular" FontSize="23" VerticalOptions="Center" TextColor="White"/>
-                    </HorizontalStackLayout>
+                <Frame.GestureRecognizers>
+                    <TapGestureRecognizer NumberOfTapsRequired="1" Tapped="memberListPageButtonTapped"/>
+                </Frame.GestureRecognizers>
 
-                    <Frame.GestureRecognizers>
-                        <TapGestureRecognizer NumberOfTapsRequired="1" Tapped="adminControlPageButtonTapped"/>
-                    </Frame.GestureRecognizers>
-                </Frame>
+            </Frame>
 
-                <Button Pressed="Button_Pressed"/>
+            <Frame x:Name="promoPageButton" BackgroundColor="Black" BorderColor="Black" Padding="0" AbsoluteLayout.LayoutBounds=".5, .23, .8, .055" AbsoluteLayout.LayoutFlags="All">
 
-            </VerticalStackLayout>
-            
-        </VerticalStackLayout>
+                <AbsoluteLayout>
+                    <Label x:Name="promoPageOpened" BackgroundColor="White" IsVisible="False" AbsoluteLayout.LayoutBounds=".06, .5, .02, .6" AbsoluteLayout.LayoutFlags="All"/>
+                    <Image Source="promowhite.png" AbsoluteLayout.LayoutBounds=".12, .5, .15, .65" AbsoluteLayout.LayoutFlags="All"/>
+                    <Label Text="PROMOS" FontFamily="Bebas-Regular" FontSize="23" TextColor="White" AbsoluteLayout.LayoutBounds=".4, .5" AbsoluteLayout.LayoutFlags="PositionProportional"/>
+                </AbsoluteLayout>
+
+                <Frame.GestureRecognizers>
+                    <TapGestureRecognizer NumberOfTapsRequired="1" Tapped="promoPageButtonTapped"/>
+                </Frame.GestureRecognizers>
+
+            </Frame>
+
+            <Frame x:Name="notificationPageButton" BackgroundColor="Black" BorderColor="Black" Padding="0" AbsoluteLayout.LayoutBounds=".5, .32, .8, .055" AbsoluteLayout.LayoutFlags="All">
+
+                <AbsoluteLayout>
+                    <Label x:Name="notificationPageOpened" BackgroundColor="White" IsVisible="False" AbsoluteLayout.LayoutBounds=".06, .5, .02, .6" AbsoluteLayout.LayoutFlags="All"/>
+                    <Image Source="notificationwhite.png" AbsoluteLayout.LayoutBounds=".12, .5, .15, .65" AbsoluteLayout.LayoutFlags="All"/>
+                    <Label Text="NOTIFICATIONS" FontFamily="Bebas-Regular" FontSize="23" VerticalOptions="Center" TextColor="White" AbsoluteLayout.LayoutBounds=".56, .5" AbsoluteLayout.LayoutFlags="PositionProportional"/>
+                </AbsoluteLayout>
+
+                <Frame.GestureRecognizers>
+                    <TapGestureRecognizer NumberOfTapsRequired="1" Tapped="notificationPageButtonTapped"/>
+                </Frame.GestureRecognizers>
+
+            </Frame>
+
+            <Frame x:Name="adminControlPageButton" BackgroundColor="Black" BorderColor="Black" Padding="0" AbsoluteLayout.LayoutBounds=".5, .41, .8, .055" AbsoluteLayout.LayoutFlags="All">
+
+                <AbsoluteLayout>
+                    <Label x:Name="adminControlPageOpened" BackgroundColor="White" IsVisible="False" AbsoluteLayout.LayoutBounds=".06, .5, .02, .6" AbsoluteLayout.LayoutFlags="All"/>
+                    <Image Source="admincontrolswhite.png" AbsoluteLayout.LayoutBounds=".12, .5, .15, .65" AbsoluteLayout.LayoutFlags="All"/>
+                    <Label Text="ADMIN CONTROLS" FontFamily="Bebas-Regular" FontSize="23" TextColor="White" AbsoluteLayout.LayoutBounds=".67, .5" AbsoluteLayout.LayoutFlags="PositionProportional"/>
+                </AbsoluteLayout>
+
+                <Frame.GestureRecognizers>
+                    <TapGestureRecognizer NumberOfTapsRequired="1" Tapped="adminControlPageButtonTapped"/>
+                </Frame.GestureRecognizers>
+
+            </Frame>
+
+            <Label Text="HELLO, USER!" FontFamily="Bebas-Regular" FontSize="25" TextColor="White" AbsoluteLayout.LayoutBounds=".5, .625" AbsoluteLayout.LayoutFlags="PositionProportional"/>
+            <Image BackgroundColor="Wheat" AbsoluteLayout.LayoutBounds=".5, .845,.8,.24" AbsoluteLayout.LayoutFlags="All"/>
+            <Button Text="LOGOUT" FontFamily="Bebas-Neue" FontAttributes="Bold" BackgroundColor="#ff3131" TextColor="White" AbsoluteLayout.LayoutBounds=".5, .94, .55, .05" AbsoluteLayout.LayoutFlags="All" />
+         
+
+        </AbsoluteLayout>
+
     </Shell.FlyoutContent>
-
-    <Shell.FlyoutFooter>
-        <VerticalStackLayout Padding="10">
-
-            <Label Text="HELLO, + {Binding Username}" FontSize="20" HorizontalOptions="Center" TextColor="White" Margin="0,0,0,10" FontFamily="Bebas-Regular"/>
-            
-            <Image WidthRequest="220" HeightRequest="220" Background="Wheat"/>
-
-            <Label Text="Version 1.0" FontSize="10" HorizontalOptions="Center" TextColor="White" Margin="0,20,0,0"/>
-            <Button Text="LOGOUT" FontFamily="Bebas-Neue" FontAttributes="Bold" BackgroundColor="#ff3131" TextColor="White" WidthRequest="175"/>
-            
-        </VerticalStackLayout>
-    </Shell.FlyoutFooter>
 
     <ShellContent Route="Test" ContentTemplate="{DataTemplate views:TestingView}"/>
     <ShellContent Route="Page1" ContentTemplate="{DataTemplate views:PageView1}"/>

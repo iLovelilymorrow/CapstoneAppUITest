@@ -5,159 +5,123 @@
              BackgroundColor="#747474"
              xmlns:styles="clr-namespace:CapstoneAppUITest.Resources.Styles">
 
-    <VerticalStackLayout Margin="30,0,0,0">
-        
-        <Label Text="ACTIVE PROMOS" TextColor="Black" FontSize="45" FontFamily="Bebas-Regular" HorizontalOptions="Start" Margin="0,30,0,10"/>
+    <AbsoluteLayout>
 
-        <Frame BackgroundColor="Black" BorderColor="Black" Padding="3" WidthRequest="870" CornerRadius="15" HorizontalOptions="Start">
+        <Label Text="ACTIVE PROMOS" FontSize="55" FontFamily="Bebas-Regular" AbsoluteLayout.LayoutBounds=".028, .019" AbsoluteLayout.LayoutFlags="PositionProportional"/>
 
-            <Frame BackgroundColor="White" HeightRequest="200" CornerRadius="10" BorderColor="Black">
+        <Frame BackgroundColor="Black" BorderColor="Black" Padding="3" CornerRadius="15" AbsoluteLayout.LayoutBounds=".3, .125, 0.92, 0.25" AbsoluteLayout.LayoutFlags="All">
 
-                <Grid Padding="0" RowSpacing="0" ColumnSpacing="0">
-                    <!-- Define Columns -->
-                    <Grid.ColumnDefinitions>
-                        <ColumnDefinition Width="Auto" />
-                        <ColumnDefinition Width="2*" />
-                        <ColumnDefinition Width="3*" />
-                        <ColumnDefinition Width="1.5*" />
-                        <ColumnDefinition Width="2*" />
-                        <ColumnDefinition Width="2*" />
-                    </Grid.ColumnDefinitions>
+            <Frame BackgroundColor="White" CornerRadius="10" BorderColor="Black">
 
-                    <!-- Define Rows -->
-                    <Grid.RowDefinitions>
-                        <RowDefinition Height="Auto"/>
-                        <RowDefinition Height="Auto"/>
-                    </Grid.RowDefinitions>
-
-                    <!-- HEADER ROW -->
-                    <Frame Grid.Row="0" Grid.Column="0" BorderColor="Black" Padding="5" HasShadow="False">
-                        <Label Text="✓" FontAttributes="Bold" />
-                    </Frame>
-                    <Frame Grid.Row="0" Grid.Column="1" BorderColor="Black" Padding="5" HasShadow="False">
-                        <Label Text="NAME" FontAttributes="Bold" />
-                    </Frame>
-                    <Frame Grid.Row="0" Grid.Column="2" BorderColor="Black" Padding="5" HasShadow="False">
-                        <Label Text="DESCRIPTION" FontAttributes="Bold" />
-                    </Frame>
-                    <Frame Grid.Row="0" Grid.Column="3" BorderColor="Black" Padding="5" HasShadow="False">
-                        <Label Text="PRICE" FontAttributes="Bold" />
-                    </Frame>
-                    <Frame Grid.Row="0" Grid.Column="4" BorderColor="Black" Padding="5" HasShadow="False">
-                        <Label Text="DATE CREATED" FontAttributes="Bold" />
-                    </Frame>
-                    <Frame Grid.Row="0" Grid.Column="5" BorderColor="Black" Padding="5" HasShadow="False">
-                        <Label Text="ACTIONS" FontAttributes="Bold" />
-                    </Frame>
-
-                    <!-- DATA ROW 1 -->
-                    <Frame Grid.Row="1" Grid.Column="0" BorderColor="Black" Padding="5" HasShadow="False">
-                        <CheckBox />
-                    </Frame>
-                    <Frame Grid.Row="1" Grid.Column="1" BorderColor="Black" Padding="5" HasShadow="False">
-                        <Label Text="Student" />
-                    </Frame>
-                    <Frame Grid.Row="1" Grid.Column="2" BorderColor="Black" Padding="5" HasShadow="False">
-                        <Label Text="Discounted promo" />
-                    </Frame>
-                    <Frame Grid.Row="1" Grid.Column="3" BorderColor="Black" Padding="5" HasShadow="False">
-                        <Label Text="400" />
-                    </Frame>
-                    <Frame Grid.Row="1" Grid.Column="4" BorderColor="Black" Padding="5" HasShadow="False">
-                        <Label Text="03/12/2025" />
-                    </Frame>
-                    <Frame Grid.Row="1" Grid.Column="5" BorderColor="Black" Padding="5" HasShadow="False">
-                        <HorizontalStackLayout Spacing="10">
-                            <Button Text="Edit" FontSize="12"/>
-                            <Button Text="Delete" FontSize="12"/>
-                        </HorizontalStackLayout>
-                    </Frame>
-
-                </Grid>
 
             </Frame>
 
         </Frame>
 
-        <HorizontalStackLayout>
+        <Frame BackgroundColor="Black" BorderColor="Black" AbsoluteLayout.LayoutBounds="0.3, .14, .92, 0.003" AbsoluteLayout.LayoutFlags="All"/>
 
-            <Frame BackgroundColor="Black" BorderColor="Black" HeightRequest="30" WidthRequest="120" Padding="0" Margin="0,10">
-                <Label Text="EDIT SELECTED" TextColor="White" FontFamily="Bebas-Regular" FontSize="18" HorizontalOptions="Center" VerticalOptions="Center"/>
-            </Frame>
+        <Frame BackgroundColor="Black" BorderColor="Black" Padding="0" CornerRadius="15" AbsoluteLayout.LayoutBounds=".026, .365, .1, .04" AbsoluteLayout.LayoutFlags="All">
 
-            <Frame BackgroundColor="Black" BorderColor="Black" HeightRequest="30" WidthRequest="140" Padding="0" Margin="15,10">
-                <Label Text="DELETE SELECTED" TextColor="White" FontFamily="Bebas-Regular" FontSize="18" HorizontalOptions="Center" VerticalOptions="Center"/>
-            </Frame>
+            <AbsoluteLayout>
 
-        </HorizontalStackLayout>
+                <Label Text="EDIT SELECTED" TextColor="White" FontSize="22" FontFamily="Bebas-Regular" AbsoluteLayout.LayoutBounds=".5, .5" AbsoluteLayout.LayoutFlags="PositionProportional"/>
 
-        <Frame Padding="3" BackgroundColor="Black" BorderColor="Black" CornerRadius="15" WidthRequest="550" HeightRequest="235" HorizontalOptions="Start" Margin="190,30">
+            </AbsoluteLayout>
+
+        </Frame>
+
+        <Frame BackgroundColor="Black" BorderColor="Black" Padding="0" CornerRadius="15" AbsoluteLayout.LayoutBounds=".16, .365, .12, .04" AbsoluteLayout.LayoutFlags="All">
+
+            <AbsoluteLayout>
+
+                <Label Text="DELETE SELECTED" TextColor="White" FontSize="22" FontFamily="Bebas-Regular" AbsoluteLayout.LayoutBounds=".5, .5" AbsoluteLayout.LayoutFlags="PositionProportional"/>
+
+            </AbsoluteLayout>
+
+        </Frame>
+
+        <Frame Padding="3" BackgroundColor="Black" BorderColor="Black" CornerRadius="15" AbsoluteLayout.LayoutBounds=".5, .75, .5, .33" AbsoluteLayout.LayoutFlags="All">
 
             <Frame BackgroundColor="#545454" BorderColor="#545454" CornerRadius="10" Padding="0">
 
-                <VerticalStackLayout>
+                <AbsoluteLayout>
 
-                    <HorizontalStackLayout>
-                        
-                        <Label Text="NAME" TextColor="Black" FontSize="20" FontFamily="Bebas-Regular" HorizontalOptions="Start" Margin="20,20,0,0"/>
+                    <Label Text="NAME" TextColor="Black" FontSize="25" FontFamily="Bebas-Regular" AbsoluteLayout.LayoutBounds=".05, .12" AbsoluteLayout.LayoutFlags="PositionProportional"/>
 
-                        <Frame Padding="2" BackgroundColor="Black" BorderColor="Black" CornerRadius="40" WidthRequest="255" HeightRequest="35" HorizontalOptions="Start" Margin="5,15,0,0">
+                    <Frame Padding="2" BackgroundColor="Black" BorderColor="Black" CornerRadius="40" AbsoluteLayout.LayoutBounds=".23, .1, .45, .14" AbsoluteLayout.LayoutFlags="All">
+
+                        <Frame CornerRadius="40" Padding="0">
+
+                            <AbsoluteLayout>
+
+                                <styles:BorderlessEntry PlaceholderColor="#545454" FontSize="20" AbsoluteLayout.LayoutBounds=".9, .4, .98, 1.1" AbsoluteLayout.LayoutFlags="All"/>
+
+                            </AbsoluteLayout>
+
+                        </Frame>
+
+                    </Frame>
+
+                    <Label Text="PRICE" TextColor="Black" FontSize="25" FontFamily="Bebas-Regular" AbsoluteLayout.LayoutBounds=".669, .12" AbsoluteLayout.LayoutFlags="PositionProportional"/>
+
+                    <Frame Padding="2" BackgroundColor="Black" BorderColor="Black" CornerRadius="40" AbsoluteLayout.LayoutBounds=".93, .1, .24, .14" AbsoluteLayout.LayoutFlags="All">
+
+                        <Frame CornerRadius="40" Padding="0">
+
+                            <AbsoluteLayout>
+
+                                <styles:BorderlessEntry PlaceholderColor="#545454" FontSize="20" AbsoluteLayout.LayoutBounds=".9, .4, .98, 1.1" AbsoluteLayout.LayoutFlags="All"/>
+
+                            </AbsoluteLayout>
+
+                        </Frame>
+
+                    </Frame>
+
+                    <Label Text="DESCRIPTION" TextColor="Black" FontSize="25" FontFamily="Bebas-Regular" AbsoluteLayout.LayoutBounds=".054, .31" AbsoluteLayout.LayoutFlags="PositionProportional"/>
+
+                    <Frame Padding="3" BackgroundColor="Black" BorderColor="Black" CornerRadius="15" AbsoluteLayout.LayoutBounds=".8, .56, .75, .5" AbsoluteLayout.LayoutFlags="All">
+
+                        <Frame CornerRadius="10" Padding="0">
+
+                            <AbsoluteLayout>
+
+                                <styles:BorderlessEditor AbsoluteLayout.LayoutBounds="0.9, 0.5, 1, 1" AbsoluteLayout.LayoutFlags="All"/>
+
+                            </AbsoluteLayout>
                             
-                            <Frame CornerRadius="40" Padding="5,5,5,0">
-                                <styles:BorderlessEntry PlaceholderColor="#545454" WidthRequest="240" HeightRequest="40" FontSize="13" VerticalOptions="Center" HorizontalOptions="Center"
-                                Margin="0,0,0,4"/>
-                            </Frame>
-                            
                         </Frame>
 
-                        <Label Text="PRICE" TextColor="Black" FontSize="20" FontFamily="Bebas-Regular" HorizontalOptions="Start" Margin="10,20,0,0"/>
+                    </Frame>
 
-                        <Frame Padding="2" BackgroundColor="Black" BorderColor="Black" CornerRadius="40" WidthRequest="150" HeightRequest="35" HorizontalOptions="Start" Margin="5,15,0,0">
+                    <Frame BackgroundColor="Black" BorderColor="Black" Padding="0" CornerRadius="15" AbsoluteLayout.LayoutBounds=".078, .95, .4, .12" AbsoluteLayout.LayoutFlags="All">
 
-                            <Frame CornerRadius="40" Padding="5,5,5,0">
-                                <styles:BorderlessEntry PlaceholderColor="#545454" WidthRequest="135" HeightRequest="40" FontSize="13" VerticalOptions="Center" HorizontalOptions="Center"
-                                                        Margin="0,0,0,4"/>
-                            </Frame>
-                            
-                        </Frame>
+                        <AbsoluteLayout>
 
-                    </HorizontalStackLayout>
+                            <Label Text="CREATE PROMO" TextColor="White" FontSize="22" FontFamily="Bebas-Regular" AbsoluteLayout.LayoutBounds=".5, .5" AbsoluteLayout.LayoutFlags="PositionProportional"/>
 
-                    <HorizontalStackLayout>
+                        </AbsoluteLayout>
 
-                        <Label Text="DESCRIPTION" TextColor="Black" FontSize="20" FontFamily="Bebas-Regular" HorizontalOptions="Start" Margin="20,19,0,0"/>
+                    </Frame>
 
-                        <Frame Padding="2" BackgroundColor="Black" BorderColor="Black" CornerRadius="10" WidthRequest="410" HeightRequest="105" HorizontalOptions="Start" Margin="5,15,0,0">
+                    <Frame BackgroundColor="Black" BorderColor="Black" Padding="0" CornerRadius="15" AbsoluteLayout.LayoutBounds=".92, .95, .4, .12" AbsoluteLayout.LayoutFlags="All">
 
-                            <Frame CornerRadius="7" Padding="5,5,5,0">
-                                <styles:BorderlessEditor PlaceholderColor="#545454" WidthRequest="400" HeightRequest="110" FontSize="13" VerticalOptions="Center" HorizontalOptions="Center"
-                                Margin="0,0,0,4"/>
-                            </Frame>
+                        <AbsoluteLayout>
 
-                        </Frame>
+                            <Label Text="CANCEL" TextColor="White" FontSize="22" FontFamily="Bebas-Regular" AbsoluteLayout.LayoutBounds=".5, .5" AbsoluteLayout.LayoutFlags="PositionProportional"/>
 
-                    </HorizontalStackLayout>
+                        </AbsoluteLayout>
 
-                    <HorizontalStackLayout>
+                    </Frame>
 
-                        <Frame BackgroundColor="Black" BorderColor="Black" HeightRequest="30" WidthRequest="210" Padding="0" Margin="20,15,80,0">
-                            <Label Text="CREATE PROMO" TextColor="White" FontFamily="Bebas-Regular" FontSize="18" HorizontalOptions="Center" VerticalOptions="Center"/>
-                        </Frame>
-
-                        <Frame BackgroundColor="Black" BorderColor="Black" HeightRequest="30" WidthRequest="210" Padding="0" Margin="0,15,0,0">
-                            <Label Text="CANCEL" TextColor="White" FontFamily="Bebas-Regular" FontSize="18" HorizontalOptions="Center" VerticalOptions="Center"/>
-                        </Frame>
-
-                    </HorizontalStackLayout>
-
-                </VerticalStackLayout>
+                </AbsoluteLayout>
 
             </Frame>
 
         </Frame>
 
-        <Frame BackgroundColor="Black" BorderColor="Black" Margin="0,56,30,0" CornerRadius="25" HeightRequest="25"/>
+        <Frame BackgroundColor="Black" BorderColor="Black" CornerRadius="25" AbsoluteLayout.LayoutBounds="0.5, .97, .952, 0.03" AbsoluteLayout.LayoutFlags="All"/>
 
-    </VerticalStackLayout>
+    </AbsoluteLayout>
     
 </ContentPage>

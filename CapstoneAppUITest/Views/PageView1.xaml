@@ -7,59 +7,57 @@
 
     <AbsoluteLayout>
 
-        <Frame BackgroundColor="Black" BorderColor="Black" CornerRadius="20" AbsoluteLayout.LayoutBounds="0.05, 0.05, 0.465, 0.26" AbsoluteLayout.LayoutFlags="All">
+        <Label Text="HOME" FontSize="55" FontFamily="Bebas-Regular" AbsoluteLayout.LayoutBounds=".025, .019" AbsoluteLayout.LayoutFlags="PositionProportional"/>
 
-            <HorizontalStackLayout VerticalOptions="Center" HorizontalOptions="Center">
+        <Frame BackgroundColor="Black" BorderColor="Black" CornerRadius="20" AbsoluteLayout.LayoutBounds=".035, .128, 0.3, 0.26" AbsoluteLayout.LayoutFlags="All" Padding="0">
 
-                <Image WidthRequest="{x:Static helpers:UIScaler.imageSizeByDensity}" HeightRequest="{x:Static helpers:UIScaler.imageSizeByDensity}" Source="addmember64.png" HorizontalOptions="Center" VerticalOptions="Center" Margin="0,0,10,0"/>
+            <AbsoluteLayout>
 
-                <Label x:Name="niggaLabel" Text="ADD NEW MEMBER" FontSize="{x:Static helpers:UIScaler.fontSizeByDensity}" FontFamily="Bebas-Regular" TextColor="White" HorizontalOptions="Center" VerticalOptions="Center"/>
+                <Image WidthRequest="{x:Static helpers:UIScaler.imageSizeByDensity}" HeightRequest="{x:Static helpers:UIScaler.imageSizeByDensity}" Source="addmemberwhite.png" AbsoluteLayout.LayoutBounds=".5, .29" AbsoluteLayout.LayoutFlags="PositionProportional"/>
 
-            </HorizontalStackLayout>
+                <Label x:Name="niggaLabel" Text="ADD NEW MEMBER" FontSize="{x:Static helpers:UIScaler.fontSizeByDensity}" FontFamily="Bebas-Regular" TextColor="White" AbsoluteLayout.LayoutBounds=".5, .82" AbsoluteLayout.LayoutFlags="PositionProportional"/>
+
+            </AbsoluteLayout>
 
             <Frame.GestureRecognizers>
                 <TapGestureRecognizer NumberOfTapsRequired="1" Tapped="TapGestureRecognizer_Tapped"/>
             </Frame.GestureRecognizers>
-            
-        </Frame>
-
-        <Frame BackgroundColor="Black" BorderColor="Black" CornerRadius="20" AbsoluteLayout.LayoutBounds=".95, 0.05, 0.465, 0.26" AbsoluteLayout.LayoutFlags="All">
-
-            <HorizontalStackLayout VerticalOptions="Center" HorizontalOptions="Center">
-
-                <Image Source="notificationwhite64.png" HeightRequest="{x:Static helpers:UIScaler.imageSizeByDensity}" WidthRequest="{x:Static helpers:UIScaler.imageSizeByDensity}" Margin="0,0,10,0"/>
-
-                <Label Text="UNREAD NOTIFICATIONS" FontFamily="Bebas-Regular" FontSize="{x:Static helpers:UIScaler.fontSizeByDensity}" TextColor="White" HorizontalOptions="Center" VerticalOptions="Center"/>
-
-            </HorizontalStackLayout>
 
         </Frame>
 
-        <Frame x:Name="frame1" BackgroundColor="Black" BorderColor="Black" CornerRadius="20" AbsoluteLayout.LayoutBounds="0.05, .445, 0.465, 0.26" AbsoluteLayout.LayoutFlags="All">
+        <Frame BackgroundColor="Black" BorderColor="Black" CornerRadius="20" AbsoluteLayout.LayoutBounds=".5025, .128, 0.3, 0.26" AbsoluteLayout.LayoutFlags="All" Padding="0">
 
-            <HorizontalStackLayout VerticalOptions="Center" HorizontalOptions="Center">
+            <AbsoluteLayout>
 
-                <Image Source="search64.png" HeightRequest="{x:Static helpers:UIScaler.imageSizeByDensity}" WidthRequest="{x:Static helpers:UIScaler.imageSizeByDensity}" Margin="0,0,10,0" VerticalOptions="Center" HorizontalOptions="Center"/>
+                <Image WidthRequest="{x:Static helpers:UIScaler.imageSizeByDensity}" HeightRequest="{x:Static helpers:UIScaler.imageSizeByDensity}" Source="searchwhite.png" AbsoluteLayout.LayoutBounds=".5, .29" AbsoluteLayout.LayoutFlags="PositionProportional"/>
 
-                <Label Text="SEARCH MEMBER" FontFamily="Bebas-Regular" FontSize="{x:Static helpers:UIScaler.fontSizeByDensity}" TextColor="White" HorizontalOptions="Center" VerticalOptions="Center"/>
+                <Label Text="SEARCH MEMBER" FontSize="{x:Static helpers:UIScaler.fontSizeByDensity}" FontFamily="Bebas-Regular" TextColor="White" AbsoluteLayout.LayoutBounds=".5, .82" AbsoluteLayout.LayoutFlags="PositionProportional"/>
 
-            </HorizontalStackLayout>
+            </AbsoluteLayout>
 
-        </Frame>
-
-        <Frame BackgroundColor="Black" BorderColor="Black" CornerRadius="20" AbsoluteLayout.LayoutBounds=".95, .445, 0.465, 0.26" AbsoluteLayout.LayoutFlags="All">
-
-            <HorizontalStackLayout VerticalOptions="Center" HorizontalOptions="Center">
-
-                <Image Source="promowhite64.png" HeightRequest="{x:Static helpers:UIScaler.imageSizeByDensity}" WidthRequest="{x:Static helpers:UIScaler.imageSizeByDensity}" Margin="0,0,10,0"/>
-
-                <Label Text="CREATE PROMO" FontFamily="Bebas-Regular" FontSize="{x:Static helpers:UIScaler.fontSizeByDensity}" TextColor="White" HorizontalOptions="Center" VerticalOptions="Center"/>
-
-            </HorizontalStackLayout>
+            <Frame.GestureRecognizers>
+                <TapGestureRecognizer NumberOfTapsRequired="1" Tapped="TapGestureRecognizer_Tapped"/>
+            </Frame.GestureRecognizers>
 
         </Frame>
 
-        <Frame Padding="3" BackgroundColor="Black" BorderColor="Black" CornerRadius="15" AbsoluteLayout.LayoutBounds="0.05, .88, 0.465, 0.3" AbsoluteLayout.LayoutFlags="All">
+        <Frame BackgroundColor="Black" BorderColor="Black" CornerRadius="20" AbsoluteLayout.LayoutBounds=".97, .128, 0.3, 0.26" AbsoluteLayout.LayoutFlags="All" Padding="0">
+
+            <AbsoluteLayout>
+
+                <Image WidthRequest="{x:Static helpers:UIScaler.imageSizeByDensity}" HeightRequest="{x:Static helpers:UIScaler.imageSizeByDensity}" Source="notificationwhite.png" AbsoluteLayout.LayoutBounds=".5, .29" AbsoluteLayout.LayoutFlags="PositionProportional"/>
+
+                <Label Text="UNREAD NOTIFICATIONS" FontSize="{x:Static helpers:UIScaler.fontSizeByDensity}" FontFamily="Bebas-Regular" TextColor="White" AbsoluteLayout.LayoutBounds=".5, .82" AbsoluteLayout.LayoutFlags="PositionProportional"/>
+
+            </AbsoluteLayout>
+
+            <Frame.GestureRecognizers>
+                <TapGestureRecognizer NumberOfTapsRequired="1" Tapped="TapGestureRecognizer_Tapped"/>
+            </Frame.GestureRecognizers>
+
+        </Frame>
+
+        <Frame Padding="3" BackgroundColor="Black" BorderColor="Black" CornerRadius="15" AbsoluteLayout.LayoutBounds="0.045, .83, 0.472, 0.55" AbsoluteLayout.LayoutFlags="All">
 
             <Frame BackgroundColor="White" CornerRadius="10">
 
@@ -69,7 +67,7 @@
 
         </Frame>
 
-        <Frame Padding="3" BackgroundColor="Black" BorderColor="Black" CornerRadius="15" AbsoluteLayout.LayoutBounds=".95, .88, 0.465, 0.3" AbsoluteLayout.LayoutFlags="All">
+        <Frame Padding="3" BackgroundColor="Black" BorderColor="Black" CornerRadius="15" AbsoluteLayout.LayoutBounds="0.96, .83, 0.472, 0.55" AbsoluteLayout.LayoutFlags="All">
 
             <Frame BackgroundColor="White" CornerRadius="10">
 
@@ -79,7 +77,7 @@
 
         </Frame>
 
-        <Frame BackgroundColor="Black" BorderColor="Black" Margin="30,0,30,0" CornerRadius="25" AbsoluteLayout.LayoutBounds="0.05, .97, 1, 0.03" AbsoluteLayout.LayoutFlags="All"/>
+        <Frame BackgroundColor="Black" BorderColor="Black" CornerRadius="25" AbsoluteLayout.LayoutBounds="0.5, .97, .952, 0.03" AbsoluteLayout.LayoutFlags="All"/>
         
     </AbsoluteLayout>
     

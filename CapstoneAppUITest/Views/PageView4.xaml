@@ -5,170 +5,185 @@
              BackgroundColor="#747474"
              xmlns:styles="clr-namespace:CapstoneAppUITest.Resources.Styles">
 
-    <VerticalStackLayout>
+    <AbsoluteLayout>
 
-        <HorizontalStackLayout>
-        
-        <VerticalStackLayout Margin="30,0,0,0">
+        <Label Text="ADMIN CONTROLS" FontSize="55" FontFamily="Bebas-Regular" AbsoluteLayout.LayoutBounds=".03, .019" AbsoluteLayout.LayoutFlags="PositionProportional"/>
 
-            <Label Text="ADMIN CONTROLS" TextColor="Black" FontSize="45" FontFamily="Bebas-Regular" HorizontalOptions="Start" Margin="0,30,0,10"/>
+        <Frame Padding="3" BackgroundColor="Black" BorderColor="Black" CornerRadius="15" AbsoluteLayout.LayoutBounds=".042, .14, .4, .33" AbsoluteLayout.LayoutFlags="All">
 
-            <Frame Padding="3" BackgroundColor="Black" BorderColor="Black" CornerRadius="15" WidthRequest="460" HeightRequest="235" HorizontalOptions="Start">
+            <Frame BackgroundColor="#545454" BorderColor="#545454" CornerRadius="10" Padding="0">
 
-                <Frame BackgroundColor="#545454" BorderColor="#545454" CornerRadius="10" Padding="0">
+                <AbsoluteLayout>
 
-                    <VerticalStackLayout>
+                    <Label Text="CREATE NEW ADMIN ACCOUNT" TextColor="Black" FontSize="25" FontFamily="Bebas-Regular" AbsoluteLayout.LayoutBounds=".03, .019" AbsoluteLayout.LayoutFlags="PositionProportional"/>
 
-                        <Label Text="CREATE NEW ADMIN ACCOUNT" TextColor="Black" FontSize="20" FontFamily="Bebas-Regular" HorizontalOptions="Start" Margin="20,15,0,0"/>
+                    <Label Text="USERNAME" TextColor="Black" FontSize="25" FontFamily="Bebas-Regular" AbsoluteLayout.LayoutBounds=".11, .28" AbsoluteLayout.LayoutFlags="PositionProportional"/>
 
-                        <HorizontalStackLayout>
-                            <Label Text="USERNAME" TextColor="Black" FontSize="20" FontFamily="Bebas-Regular" HorizontalOptions="Start" Margin="20,20,0,0"/>
+                    <Frame Padding="2" BackgroundColor="Black" BorderColor="Black" CornerRadius="40" AbsoluteLayout.LayoutBounds=".7, .272, .65, .14" AbsoluteLayout.LayoutFlags="All">
 
-                            <Frame Padding="2" BackgroundColor="Black" BorderColor="Black" CornerRadius="40" WidthRequest="275" HeightRequest="35" HorizontalOptions="Start" Margin="10,15,0,0">
+                        <Frame CornerRadius="40" Padding="0">
 
-                                <Frame CornerRadius="40" Padding="5,5,5,0">
-                                    <styles:BorderlessEntry PlaceholderColor="#545454" WidthRequest="260" HeightRequest="40" FontSize="13" VerticalOptions="Center" HorizontalOptions="Center"
-                                                            Margin="0,0,0,4"/>
-                                </Frame>
-                            </Frame>
-                            
-                        </HorizontalStackLayout>
+                            <AbsoluteLayout>
 
-                        <HorizontalStackLayout>
-                            <Label Text="PASSWORD" TextColor="Black" FontSize="20" FontFamily="Bebas-Regular" HorizontalOptions="Start" Margin="20,10,0,0"/>
+                                <styles:BorderlessEntry PlaceholderColor="#545454" FontSize="20" AbsoluteLayout.LayoutBounds=".9, .4, .98, 1.1" AbsoluteLayout.LayoutFlags="All"/>
 
-                            <Frame Padding="2" BackgroundColor="Black" BorderColor="Black" CornerRadius="40" WidthRequest="275" HeightRequest="35" HorizontalOptions="Start" Margin="10,5,0,0">
+                            </AbsoluteLayout>
 
-                                <Frame CornerRadius="40" Padding="5,5,5,0">
-                                    <styles:BorderlessEntry PlaceholderColor="#545454" WidthRequest="260" HeightRequest="40" FontSize="13" VerticalOptions="Center" HorizontalOptions="Center"
-                                                            Margin="0,0,0,4"/>
-                                </Frame>
-                            </Frame>
-
-                        </HorizontalStackLayout>
-
-                        <HorizontalStackLayout>
-                            <Label Text="EMAIL" TextColor="Black" FontSize="20" FontFamily="Bebas-Regular" HorizontalOptions="Start" Margin="50,10,0,0"/>
-
-                            <Frame Padding="2" BackgroundColor="Black" BorderColor="Black" CornerRadius="40" WidthRequest="275" HeightRequest="35" HorizontalOptions="Start" Margin="10,5,0,0">
-
-                                <Frame CornerRadius="40" Padding="5,5,5,0">
-                                    <styles:BorderlessEntry PlaceholderColor="#545454" WidthRequest="260" HeightRequest="40" FontSize="13" VerticalOptions="Center" HorizontalOptions="Center"
-                                                            Margin="0,0,0,4"/>
-                                </Frame>
-                            </Frame>
-
-                        </HorizontalStackLayout>
-
-                        <Frame BackgroundColor="Black" BorderColor="Black" WidthRequest="150" HeightRequest="30" HorizontalOptions="Start" Margin="30,15,0,0" Padding="0" CornerRadius="15">
-                            <HorizontalStackLayout>
-                                <Image Source="validatewhite16.png" WidthRequest="16" HeightRequest="16" Margin="15,0,15,0"/>
-                                <Label Text="CREATE ACCOUNT" TextColor="White" FontSize="15" FontFamily="Bebas-Regular" HorizontalOptions="Center" VerticalOptions="Center"/>
-                            </HorizontalStackLayout>
                         </Frame>
 
-                    </VerticalStackLayout>
-                                     
-                </Frame>
-
-            </Frame>
-
-            <Label Text="ADMIN ACCOUNTS" TextColor="Black" FontSize="20" FontFamily="Bebas-Regular" HorizontalOptions="Start" Margin="0,15,0,0"/>
-
-            <Frame Padding="3" BackgroundColor="Black" BorderColor="Black" CornerRadius="15" Margin="0,5,0,0" WidthRequest="460" HorizontalOptions="Start">
-
-                <Frame BackgroundColor="White" CornerRadius="10" HeightRequest="150">
-
-                </Frame>
-
-            </Frame>
-
-            <Label Text="FINGERPRINT SCANNER: ONLINE" TextColor="Black" FontSize="20" FontFamily="Bebas-Regular" HorizontalOptions="Start" Margin="0,20,0,0"/>
-
-            <HorizontalStackLayout Margin="0,10,0,0">
-
-                <Frame Padding="1" BackgroundColor="Black" BorderColor="Black" CornerRadius="25" WidthRequest="220" HeightRequest="35" HorizontalOptions="Start">
-
-                    <Frame BackgroundColor="#747474" BorderColor="#747474" CornerRadius="15" Padding="0">
-                        <Label Text="SYNC DATA TO CLOUD DATABASE" TextColor="Black" FontSize="18" FontFamily="Bebas-Regular" HorizontalOptions="Center" VerticalOptions="Center"/>
                     </Frame>
-                </Frame>
 
-                <Label Text="SYNCED! / FAILED INTERNET REQUIRED!" TextColor="Black" FontSize="18" FontFamily="Bebas-Regular" HorizontalOptions="Center" Margin="5,5,0,0"/>
+                    <Label Text="PASSWORD" TextColor="Black" FontSize="25" FontFamily="Bebas-Regular" AbsoluteLayout.LayoutBounds=".11, .48" AbsoluteLayout.LayoutFlags="PositionProportional"/>
 
-            </HorizontalStackLayout>
+                    <Frame Padding="2" BackgroundColor="Black" BorderColor="Black" CornerRadius="40" AbsoluteLayout.LayoutBounds=".7, .479, .65, .14" AbsoluteLayout.LayoutFlags="All">
 
-            <HorizontalStackLayout Margin="0,10,0,0">
+                        <Frame CornerRadius="40" Padding="0">
 
-                <Frame Padding="1" BackgroundColor="Black" BorderColor="Black" CornerRadius="25" WidthRequest="220" HeightRequest="35" HorizontalOptions="Start">
+                            <AbsoluteLayout>
 
-                    <Frame BackgroundColor="#747474" BorderColor="#747474" CornerRadius="15" Padding="0">
-                        <Label Text="SYNC DATA TO LOCAL DATABASE" TextColor="Black" FontSize="18" FontFamily="Bebas-Regular" HorizontalOptions="Center" VerticalOptions="Center"/>
+                                <styles:BorderlessEntry PlaceholderColor="#545454" FontSize="20" AbsoluteLayout.LayoutBounds=".9, .4, .98, 1.1" AbsoluteLayout.LayoutFlags="All"/>
+
+                            </AbsoluteLayout>
+
+                        </Frame>
+
                     </Frame>
-                </Frame>
 
-                <Label Text="SYNCED! / FAILED INTERNET REQUIRED!" TextColor="Black" FontSize="18" FontFamily="Bebas-Regular" HorizontalOptions="Center" Margin="5,5,0,0"/>
+                    <Label Text="EMAIL" TextColor="Black" FontSize="25" FontFamily="Bebas-Regular" AbsoluteLayout.LayoutBounds=".165, .68" AbsoluteLayout.LayoutFlags="PositionProportional"/>
 
-            </HorizontalStackLayout>
+                    <Frame Padding="2" BackgroundColor="Black" BorderColor="Black" CornerRadius="40" AbsoluteLayout.LayoutBounds=".7, .687, .65, .14" AbsoluteLayout.LayoutFlags="All">
 
-        </VerticalStackLayout>
+                        <Frame CornerRadius="40" Padding="0">
 
-        <VerticalStackLayout Margin="20,90,0,0">
-            
-            <Label Text="VALIDATE MEMBERSHIP ACCOUNT REQUESTS" TextColor="Black" FontSize="20" FontFamily="Bebas-Regular" HorizontalOptions="Start" Margin="0,0,0,5"/>
+                            <AbsoluteLayout>
 
-            <Frame Padding="3" BackgroundColor="Black" BorderColor="Black" CornerRadius="15" WidthRequest="360" HorizontalOptions="Start">
+                                <styles:BorderlessEntry PlaceholderColor="#545454" FontSize="20" AbsoluteLayout.LayoutBounds=".9, .4, .98, 1.1" AbsoluteLayout.LayoutFlags="All"/>
 
-                <Frame BackgroundColor="White" CornerRadius="10" HeightRequest="365">
+                            </AbsoluteLayout>
 
-                </Frame>
+                        </Frame>
+
+                    </Frame>
+
+
+                    <Frame BackgroundColor="Black" BorderColor="Black" Padding="0" CornerRadius="15" AbsoluteLayout.LayoutBounds=".138, .88, .3, .12" AbsoluteLayout.LayoutFlags="All">
+
+                        <AbsoluteLayout>
+
+                            <Image Source="validatewhite.png" AbsoluteLayout.LayoutBounds="0.14, .4, .13, .9" AbsoluteLayout.LayoutFlags="All"/>
+
+                            <Label Text="CREATE ACCOUNT" TextColor="White" FontSize="18" FontFamily="Bebas-Regular" AbsoluteLayout.LayoutBounds=".65, .45" AbsoluteLayout.LayoutFlags="PositionProportional"/>
+
+                        </AbsoluteLayout>
+
+                    </Frame>
+
+                </AbsoluteLayout>
 
             </Frame>
 
-            <HorizontalStackLayout Margin="0,10">
-                
-                <Frame BackgroundColor="Black" BorderColor="Black" WidthRequest="110" HeightRequest="30" HorizontalOptions="Start" Padding="0" CornerRadius="15" Margin="0,0,10,0">
-                    <HorizontalStackLayout>
-                        <Image Source="validatewhite16.png" WidthRequest="16" HeightRequest="16" Margin="10,0,5,0"/>
-                        <Label Text="VALIDATE ALL" TextColor="White" FontSize="15" FontFamily="Bebas-Regular" HorizontalOptions="Center" VerticalOptions="Center"/>
-                    </HorizontalStackLayout>
-                </Frame>
+        </Frame>
 
-                <Frame BackgroundColor="Black" BorderColor="Black" WidthRequest="100" HeightRequest="30" HorizontalOptions="Start" Padding="0" CornerRadius="15" Margin="0,0,20,0">
-                    <HorizontalStackLayout>
-                        <Image Source="validatewhite16.png" WidthRequest="16" HeightRequest="16" Margin="10,0,5,0"/>
-                        <Label Text="REJECT ALL" TextColor="White" FontSize="15" FontFamily="Bebas-Regular" HorizontalOptions="Center" VerticalOptions="Center"/>
-                    </HorizontalStackLayout>
-                </Frame>
+        <Label Text="MANAGE ADMIN ACCOUNTS" TextColor="Black" FontSize="25" FontFamily="Bebas-Regular" AbsoluteLayout.LayoutBounds=".0295, .45" AbsoluteLayout.LayoutFlags="PositionProportional"/>
 
-                <Frame BackgroundColor="Black" BorderColor="Black" WidthRequest="120" HeightRequest="30" HorizontalOptions="Start" Padding="0" CornerRadius="15">
-                    <HorizontalStackLayout>
-                        <Label Text="MANAGE ACCOUNTS" TextColor="White" FontSize="15" FontFamily="Bebas-Regular" VerticalOptions="Center" Margin="11,0,0,0"/>
-                    </HorizontalStackLayout>
-                </Frame>
-                                             
-            </HorizontalStackLayout>
+        <Frame Padding="3" BackgroundColor="Black" BorderColor="Black" CornerRadius="15" AbsoluteLayout.LayoutBounds=".042, .63, .4, .25" AbsoluteLayout.LayoutFlags="All">
 
-            <HorizontalStackLayout>
-                
-                <Label Text="DARK MODE:" FontFamily="Bebas-Regular" FontSize="20" TextColor="Black" Padding="0" Margin="0,69,0,0"/>
-                <Switch HorizontalOptions="Start" ThumbColor="Black" WidthRequest="35" HeightRequest="20" Margin="8,50,0,0"/>
+            <Frame BackgroundColor="White" BorderColor="White" CornerRadius="10" Padding="0">
 
-                <Frame BackgroundColor="Black" BorderColor="Black" WidthRequest="225" HeightRequest="65" Margin="10,50,0,0">
-                    <HorizontalStackLayout>
-                        <Image Source="warningwhite64.png" WidthRequest="24" HeightRequest="24" HorizontalOptions="Center" VerticalOptions="Start"/>
-                        <Label Text="CLEAR LOCAL DATABASE" TextColor="White" FontSize="19" FontFamily="Bebas-Regular" HorizontalOptions="Center" Margin="10,0,0,0"/>
-                    </HorizontalStackLayout>
-                </Frame>
-
-            </HorizontalStackLayout>
+            </Frame>
             
-        </VerticalStackLayout>
-        
-    </HorizontalStackLayout>
+        </Frame>
 
-        <Frame BackgroundColor="Black" BorderColor="Black" Margin="30,38,30,0" CornerRadius="25" HeightRequest="25"/>
+        <Label Text="FINGERPRINT SCANNER: ONLINE (INTERNET)" TextColor="Black" FontSize="25" FontFamily="Bebas-Regular" AbsoluteLayout.LayoutBounds=".032, .76" AbsoluteLayout.LayoutFlags="PositionProportional"/>
 
-    </VerticalStackLayout>
+        <Frame BackgroundColor="Black" BorderColor="Black" Padding="0" CornerRadius="15" AbsoluteLayout.LayoutBounds=".03, .814, .14, .04" AbsoluteLayout.LayoutFlags="All">
+
+            <AbsoluteLayout>
+
+                <Label Text="SYNC DATA TO CLOUD DATABASE" TextColor="White" FontSize="18" FontFamily="Bebas-Regular" AbsoluteLayout.LayoutBounds=".45, .45" AbsoluteLayout.LayoutFlags="PositionProportional"/>
+
+            </AbsoluteLayout>
+
+        </Frame>
+
+        <Label Text="SYNCED! / FAILED, INTERNET REQUIRED!" TextColor="Black" FontSize="25" FontFamily="Bebas-Regular" AbsoluteLayout.LayoutBounds=".214, .809" AbsoluteLayout.LayoutFlags="PositionProportional"/>
+
+        <Frame BackgroundColor="Black" BorderColor="Black" Padding="0" CornerRadius="15" AbsoluteLayout.LayoutBounds=".03, .864, .14, .04" AbsoluteLayout.LayoutFlags="All">
+
+            <AbsoluteLayout>
+
+                <Label Text="SYNC DATA TO LOCAL DATABASE" TextColor="White" FontSize="18" FontFamily="Bebas-Regular" AbsoluteLayout.LayoutBounds=".45, .45" AbsoluteLayout.LayoutFlags="PositionProportional"/>
+
+            </AbsoluteLayout>
+
+        </Frame>
+
+        <Label Text="SYNCED! / FAILED, INTERNET REQUIRED!" TextColor="Black" FontSize="25" FontFamily="Bebas-Regular" AbsoluteLayout.LayoutBounds=".214, .859" AbsoluteLayout.LayoutFlags="PositionProportional"/>
+  
+        <Label Text="VALIDATE MEMBERSHIP ACCOUNT REQUESTS" TextColor="Black" FontSize="25" FontFamily="Bebas-Regular" AbsoluteLayout.LayoutBounds=".568, .093" AbsoluteLayout.LayoutFlags="PositionProportional"/>
+
+        <Frame Padding="3" BackgroundColor="Black" BorderColor="Black" CornerRadius="15" AbsoluteLayout.LayoutBounds=".735, .27, .4, .53" AbsoluteLayout.LayoutFlags="All">
+
+            <Frame BackgroundColor="White" BorderColor="White" CornerRadius="10" Padding="0">
+
+            </Frame>
+
+        </Frame>
+
+        <Frame BackgroundColor="Black" BorderColor="Black" Padding="0" CornerRadius="15" AbsoluteLayout.LayoutBounds=".496, .697, .11, .04" AbsoluteLayout.LayoutFlags="All">
+
+            <AbsoluteLayout>
+
+                <Image Source="validatewhite.png" AbsoluteLayout.LayoutBounds="0.14, .4, .2, .7" AbsoluteLayout.LayoutFlags="All"/>
+
+                <Label Text="VALIDATE ALL" TextColor="White" FontSize="18" FontFamily="Bebas-Regular" AbsoluteLayout.LayoutBounds=".65, .45" AbsoluteLayout.LayoutFlags="PositionProportional"/>
+
+            </AbsoluteLayout>
+
+        </Frame>
+
+        <Frame BackgroundColor="Black" BorderColor="Black" Padding="0" CornerRadius="15" AbsoluteLayout.LayoutBounds=".63, .697, .1, .04" AbsoluteLayout.LayoutFlags="All">
+
+            <AbsoluteLayout>
+
+                <Image Source="cross.png" AbsoluteLayout.LayoutBounds="0.14, .4, .2, .6" AbsoluteLayout.LayoutFlags="All"/>
+
+                <Label Text="REJECT ALL" TextColor="White" FontSize="18" FontFamily="Bebas-Regular" AbsoluteLayout.LayoutBounds=".65, .45" AbsoluteLayout.LayoutFlags="PositionProportional"/>
+
+            </AbsoluteLayout>
+
+        </Frame>
+
+        <Frame BackgroundColor="Black" BorderColor="Black" Padding="0" CornerRadius="15" AbsoluteLayout.LayoutBounds=".825, .697, .1, .04" AbsoluteLayout.LayoutFlags="All">
+
+            <AbsoluteLayout>
+
+                <Label Text="MANAGE ACCOUNTS" TextColor="White" FontSize="18" FontFamily="Bebas-Regular" AbsoluteLayout.LayoutBounds=".54, .45" AbsoluteLayout.LayoutFlags="PositionProportional"/>
+
+            </AbsoluteLayout>
+
+        </Frame>
+
+        <Frame BackgroundColor="Black" BorderColor="Black" Padding="0" CornerRadius="15" AbsoluteLayout.LayoutBounds=".815, .843, .15, .11" AbsoluteLayout.LayoutFlags="All">
+
+            <AbsoluteLayout>
+
+                <Image Source="warningwhite64.png" AbsoluteLayout.LayoutBounds=".5, .25, .2, .3" AbsoluteLayout.LayoutFlags="All"/>
+
+                <Label Text="CLEAR LOCAL DATABASE" TextColor="White" FontSize="20" FontFamily="Bebas-Regular" AbsoluteLayout.LayoutBounds=".5, .7" AbsoluteLayout.LayoutFlags="PositionProportional"/>
+
+            </AbsoluteLayout>
+
+        </Frame>
+
+        <Label Text="DARK MODE:" TextColor="Black" FontSize="25" FontFamily="Bebas-Regular" AbsoluteLayout.LayoutBounds=".574, .813" AbsoluteLayout.LayoutFlags="PositionProportional" BackgroundColor="#747474"/>
+
+        <Switch OnColor="Black" ThumbColor="Black" AbsoluteLayout.LayoutBounds=".62, .82" AbsoluteLayout.LayoutFlags="PositionProportional"/>
+
+        <Image BackgroundColor="Wheat" AbsoluteLayout.LayoutBounds=".5, .5,.2,.2" AbsoluteLayout.LayoutFlags="All"/>
+
+        <Frame BackgroundColor="Black" BorderColor="Black" CornerRadius="25" AbsoluteLayout.LayoutBounds="0.5, .97, .952, 0.03" AbsoluteLayout.LayoutFlags="All"/>
+
+    </AbsoluteLayout>
 
 </ContentPage>

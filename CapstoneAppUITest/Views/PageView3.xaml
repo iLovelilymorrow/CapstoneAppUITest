@@ -6,7 +6,9 @@
 
     <AbsoluteLayout>
 
-        <Frame BackgroundColor="Black" BorderColor="Black" AbsoluteLayout.LayoutBounds=".023, .09, .08, .035" AbsoluteLayout.LayoutFlags="All" Padding="0" CornerRadius="25">
+        <Label Text="NOTIFICATIONS" FontSize="55" FontFamily="Bebas-Regular" AbsoluteLayout.LayoutBounds=".03, .019" AbsoluteLayout.LayoutFlags="PositionProportional"/>
+
+        <Frame BackgroundColor="Black" BorderColor="Black" AbsoluteLayout.LayoutBounds=".028, .095, .08, .035" AbsoluteLayout.LayoutFlags="All" Padding="0" CornerRadius="25">
 
             <AbsoluteLayout>
 
@@ -16,7 +18,7 @@
                         
         </Frame>
 
-        <Frame BackgroundColor="Black" BorderColor="Black" AbsoluteLayout.LayoutBounds=".13, .09, .12, .035" AbsoluteLayout.LayoutFlags="All" Padding="0" CornerRadius="25">
+        <Frame BackgroundColor="Black" BorderColor="Black" AbsoluteLayout.LayoutBounds=".13, .095, .12, .035" AbsoluteLayout.LayoutFlags="All" Padding="0" CornerRadius="25">
 
             <AbsoluteLayout>
 
@@ -25,8 +27,8 @@
             </AbsoluteLayout>
 
         </Frame>
-        
-        <Frame BackgroundColor="Black" BorderColor="Black" AbsoluteLayout.LayoutBounds=".27, .09, .09, .035" AbsoluteLayout.LayoutFlags="All" Padding="0" CornerRadius="25">
+
+        <Frame BackgroundColor="Black" BorderColor="Black" AbsoluteLayout.LayoutBounds=".267, .095, .09, .035" AbsoluteLayout.LayoutFlags="All" Padding="0" CornerRadius="25">
 
             <AbsoluteLayout>
 
@@ -36,7 +38,7 @@
 
         </Frame>
 
-        <Frame BackgroundColor="Black" BorderColor="Black" AbsoluteLayout.LayoutBounds=".38, .09, .08, .035" AbsoluteLayout.LayoutFlags="All" Padding="0" CornerRadius="25">
+        <Frame BackgroundColor="Black" BorderColor="Black" AbsoluteLayout.LayoutBounds=".371, .095, .08, .035" AbsoluteLayout.LayoutFlags="All" Padding="0" CornerRadius="25">
 
             <AbsoluteLayout>
 
@@ -46,9 +48,11 @@
 
         </Frame>
 
-        <Label Text="NO NOTIFICATIONS YET. / APRIL 9, 2025" FontSize="30" FontFamily="Bebas-Regular" AbsoluteLayout.LayoutBounds=".03, .145" AbsoluteLayout.LayoutFlags="PositionProportional"/>
+        <Frame BackgroundColor="Black" BorderColor="Black" Margin="30,0,30,0" CornerRadius="25" AbsoluteLayout.LayoutBounds="0.68, .15, .99, 0.015" AbsoluteLayout.LayoutFlags="All"/>
 
-        <Frame BackgroundColor="Black" BorderColor="Black" Margin="30,0,30,0" CornerRadius="25" AbsoluteLayout.LayoutBounds="0.05, .97, 1, 0.03" AbsoluteLayout.LayoutFlags="All"/>
+        <Label Text="NO NOTIFICATIONS YET. / APRIL 9, 2025" FontSize="30" FontFamily="Bebas-Regular" AbsoluteLayout.LayoutBounds=".033, .185" AbsoluteLayout.LayoutFlags="PositionProportional"/>
+
+        <Frame BackgroundColor="Black" BorderColor="Black" CornerRadius="25" AbsoluteLayout.LayoutBounds="0.5, .97, .952, 0.03" AbsoluteLayout.LayoutFlags="All"/>
 
     </AbsoluteLayout>
     

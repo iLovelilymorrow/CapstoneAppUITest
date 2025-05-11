@@ -10,7 +10,7 @@ namespace CapstoneAppUITest.Helpers {
         public static double screenWidth => DeviceDisplay.MainDisplayInfo.Width;
         public static double screenDensity => DeviceDisplay.MainDisplayInfo.Density;
 
-        public static double fontSizeByDensity => 65 / screenDensity;
+        public static double fontSizeByDensity => 50 / screenDensity;
         public static double imageSizeByDensity => 105 / screenDensity;
     }
 }
